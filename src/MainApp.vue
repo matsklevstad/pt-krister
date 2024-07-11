@@ -1,12 +1,15 @@
 <template>
   <div id="app">
-    <PageHeader />
+    <PageHeader @scrollTo="scrollToSection" />
     <div class="full-page-container" @scrollTo="scrollToSection">
       <section class="page-section" id="start">
         <StartPage @scrollTo="scrollToSection" />
       </section>
       <section class="page-section" id="about">
         <AboutMe />
+      </section>
+      <section class="page-section" id="services">
+        <PTServices />
       </section>
       <section class="page-section" id="reviews">
         <CustomerReviews />
@@ -21,6 +24,7 @@ import PageHeader from "./components/PageHeader.vue";
 import StartPage from "./components/StartPage.vue";
 import AboutMe from "./components/AboutMe.vue";
 import CustomerReviews from "./components/CustomerReviews.vue";
+import PTServices from "./components/PTServices.vue";
 
 export default {
   name: "MainApp",
@@ -29,6 +33,7 @@ export default {
     StartPage,
     AboutMe,
     CustomerReviews,
+    PTServices,
   },
   methods: {
     scrollToSection(sectionId) {

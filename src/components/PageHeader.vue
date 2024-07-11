@@ -2,11 +2,11 @@
   <div class="container">
     <!-- <img src="@/assets/ai-logo.svg" alt="Logo" /> -->
     <div class="links">
-      <p>⭐️ KRISTER SÆVIK | PT</p>
-      <p>Om meg</p>
-      <p>Tjenester</p>
-      <p>Referanser</p>
-      <p>Blogg</p>
+      <p @click="navigateTo('start')">⭐️ KRISTER SÆVIK | PT</p>
+      <p @click="navigateTo('about')">Om meg</p>
+      <p @click="navigateTo('services')">Tjenester</p>
+      <p @click="navigateTo('reviews')">Referanser</p>
+      <p @click="navigateTo('blog')">Blogg</p>
     </div>
     <button>KONTAKT MEG</button>
   </div>
@@ -15,6 +15,11 @@
 <script>
 export default {
   name: "PageHeader",
+  methods: {
+    navigateTo(section) {
+      this.$emit("scrollTo", section);
+    },
+  },
 };
 </script>
 
@@ -29,6 +34,7 @@ p,
 button {
   font-size: 1.5rem;
   font-weight: lighter;
+  cursor: pointer;
 }
 
 .container {

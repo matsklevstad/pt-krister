@@ -10,7 +10,7 @@
         muskler eller bare forbedre din generelle form, er jeg her for å støtte
         deg på hvert steg av veien.
       </p>
-      <button @click="scrollToNextSection">Jeg vil vite mer!</button>
+      <button @click="scrollToNextSection">JEG VIL VITE MER!</button>
     </div>
     <div class="image-container">
       <img class="image" src="../assets/lifting.jpeg" alt="Krister" />
