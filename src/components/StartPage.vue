@@ -2,9 +2,7 @@
   <div data-aos="fade-up" class="wrapper">
     <div class="overlay"></div>
     <div class="text">
-      <h1 data-aos="fade-right" data-aos-delay="200" d>
-        Vil du komme i form? 🫵
-      </h1>
+      <h1 data-aos="fade-right" data-aos-delay="200">Vil du komme i form? 🫵</h1>
       <p data-aos="fade-left" data-aos-delay="400">
         Velkommen til din vei mot bedre helse og velvære! Jeg tilbyr
         skreddersydde treningsprogrammer og personlig oppfølging for å hjelpe
@@ -111,9 +109,8 @@ p {
 }
 
 button {
-  background-color: #00a8a8;
+  background-color: #f9f9f9;
   border: none;
-  color: white;
   padding: 15px 32px;
   font-size: 16px;
   border-radius: 25px;
@@ -121,6 +118,6 @@ button {
 }
 
 button:hover {
-  background-color: #046291;
+  background-color:  #c2c2c2;
 }
 </style>

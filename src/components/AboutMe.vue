@@ -2,22 +2,24 @@
   <div class="container">
     <div class="content">
       <div class="infobox">
-        <h1>Hei, jeg er Krister! 😁</h1>
-        <p>
+        <h1 data-aos="fade-down" data-aos-delay="400">
+          Hei, jeg er Krister 😁
+        </h1>
+        <p data-aos="fade-left" data-aos-delay="600">
           👉🏻 Jeg er utdannet ved Norges idrettshøgskole og har spesialisert meg
           innen styrke- og kondisjonstrening. Jeg har også erfaring med
           kostholdsveiledning og skreddersyr treningsprogrammer for å møte
           individuelle mål og behov.
-        </p>
-        <p>
+          <br /><br />
           👉🏻 Med åtte års erfaring i treningsbransjen har jeg hjulpet utallige
           klienter med å oppnå deres drømmekropp og opprettholde en sunn
           livsstil. Min lidenskap for fitness og helse er drivkraften bak
           suksessen til mine klienter.
+          <br /><br />
+          👉🏻 Ta det første steget mot en bedre versjon av deg selv i dag!
         </p>
-        <p>👉🏻 Ta det første steget mot en bedre versjon av deg selv i dag!</p>
       </div>
-      <div>
+      <div data-aos="fade-right" data-aos-delay="600">
         <img src="../assets/krister-saevik.jpg" alt="Pull Down Image" />
       </div>
     </div>
@@ -25,9 +27,14 @@
 </template>
 
 <script>
+import AOS from "aos";
+import "aos/dist/aos.css";
+
 export default {
   name: "AboutMe",
-
+  mounted() {
+    AOS.init();
+  },
   methods: {
     // Your component's JavaScript
   },

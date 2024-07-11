@@ -39,7 +39,7 @@ export default {
     scrollToSection(sectionId) {
       const section = document.getElementById(sectionId);
       if (section) {
-        section.scrollIntoView({ behavior: "smooth" });
+        section.scrollIntoView({ behavior: "smooth", block: "start" });
       }
     },
   },
@@ -58,7 +58,6 @@ body {
   font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  text-align: center;
   color: #efefef;
   background-color: #080c1e;
   height: 100vh;

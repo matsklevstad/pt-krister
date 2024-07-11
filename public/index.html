@@ -1,17 +1,50 @@
 <!DOCTYPE html>
 <html lang="">
   <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width,initial-scale=1.0">
-    <link rel="icon" href="<%= BASE_URL %>favicon.ico">
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+    <link rel="icon" href="<%= BASE_URL %>favicon.ico" />
     <title><%= htmlWebpackPlugin.options.title %></title>
+
+    <!-- Add AOS CSS if necessary -->
+    <link href="path/to/aos.css" rel="stylesheet" />
+
+    <!-- Add Intersection Observer Polyfill if needed for older browsers -->
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=IntersectionObserver"></script>
   </head>
   <body>
     <noscript>
-      <strong>We're sorry but <%= htmlWebpackPlugin.options.title %> doesn't work properly without JavaScript enabled. Please enable it to continue.</strong>
+      <strong
+        >We're sorry but <%= htmlWebpackPlugin.options.title %> doesn't work
+        properly without JavaScript enabled. Please enable it to
+        continue.</strong
+      >
     </noscript>
     <div id="app"></div>
     <!-- built files will be auto injected -->
+
+    <!-- AOS JavaScript -->
+    <script>
+      document.addEventListener(
+        "scroll",
+        (event) => {
+          const aosAnimation = document.querySelectorAll("[data-aos]");
+          observer = new IntersectionObserver((entries) => {
+            entries.forEach((entry) => {
+              if (entry.intersectionRatio > 0) {
+                entry.target.classList.add("aos-animate");
+              } else {
+                entry.target.classList.remove("aos-animate");
+              }
+            });
+          });
+          aosAnimation.forEach((aosObject) => {
+            observer.observe(aosObject);
+          });
+        },
+        { capture: true, passive: true }
+      );
+    </script>
   </body>
 </html>
