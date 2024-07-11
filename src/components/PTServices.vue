@@ -39,6 +39,9 @@ export default {
   text-align: center;
 }
 
+h1 {
+}
+
 .grid {
   display: grid;
   grid-template-columns: repeat(2, 1fr);

@@ -1,16 +1,24 @@
 <template>
-  <div class="wrapper">
+  <div data-aos="fade-up" class="wrapper">
     <div class="overlay"></div>
     <div class="text">
-      <h1>Vil du komme i form? 🫵</h1>
-      <p>
+      <h1 data-aos="fade-right" data-aos-delay="200" d>
+        Vil du komme i form? 🫵
+      </h1>
+      <p data-aos="fade-left" data-aos-delay="400">
         Velkommen til din vei mot bedre helse og velvære! Jeg tilbyr
         skreddersydde treningsprogrammer og personlig oppfølging for å hjelpe
         deg med å nå dine mål. Uansett om du ønsker å gå ned i vekt, bygge
         muskler eller bare forbedre din generelle form, er jeg her for å støtte
         deg på hvert steg av veien.
       </p>
-      <button @click="scrollToNextSection">JEG VIL VITE MER!</button>
+      <button
+        data-aos="fade-up"
+        data-aos-delay="600"
+        @click="scrollToNextSection"
+      >
+        JEG VIL VITE MER!
+      </button>
     </div>
     <div class="image-container">
       <img class="image" src="../assets/lifting.jpeg" alt="Krister" />
@@ -19,9 +27,14 @@
 </template>
 
 <script>
+import AOS from "aos";
+import "aos/dist/aos.css";
 export default {
   name: "StartPage",
   // Your component's JavaScript logic goes here
+  mounted() {
+    AOS.init();
+  },
   methods: {
     scrollToNextSection() {
       this.$emit("scrollTo", "about");
@@ -54,6 +67,10 @@ h1 {
   background-color: #080c1e;
   text-align: left;
   font-weight: lighter;
+}
+
+p {
+  width: 80%;
 }
 
 .text {
