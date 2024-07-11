@@ -55,7 +55,7 @@ body {
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: #efefef;
-  background-color: #324047;
+  background-color: #080c1e;
   height: 100vh;
   display: flex;
   flex-direction: column;

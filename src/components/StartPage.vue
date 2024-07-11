@@ -1,17 +1,19 @@
 <template>
   <div class="wrapper">
+    <div class="overlay"></div>
     <div class="text">
-      <h1>PERSONLIG TRENING LEDET AV EN EKSPERT! 🚀</h1>
+      <h1>Vil du komme i form? 🫵</h1>
       <p>
-        Jeg hjelper motiverte mennesker mot en sterkere kropp og varig
-        livsstilsendring. Med min ekspertise og personlige tilnærming skaper jeg
-        skreddersydde trenings- og kostholdsplaner som passer dine unike behov
-        og mål.
+        Velkommen til din vei mot bedre helse og velvære! Jeg tilbyr
+        skreddersydde treningsprogrammer og personlig oppfølging for å hjelpe
+        deg med å nå dine mål. Uansett om du ønsker å gå ned i vekt, bygge
+        muskler eller bare forbedre din generelle form, er jeg her for å støtte
+        deg på hvert steg av veien.
       </p>
-      <button @click="scrollToNextSection">LES MER</button>
+      <button @click="scrollToNextSection">Jeg vil vite mer!</button>
     </div>
     <div class="image-container">
-      <img class="image" src="../assets/random_person.jpeg" alt="Krister" />
+      <img class="image" src="../assets/lifting.jpeg" alt="Krister" />
     </div>
   </div>
 </template>
@@ -30,63 +32,78 @@ export default {
 
 <style scoped>
 .wrapper {
+  position: relative;
   display: flex;
-  padding-left: 10px;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  overflow: hidden;
 }
 
 h1 {
-  font-size: 5rem;
+  font-size: 4rem;
   line-height: 1.1;
 }
 
 .text {
   width: 50%;
-  font-size: 1.5rem;
+  font-size: 1rem;
   padding: 20px;
   margin: auto;
   z-index: 1;
-  background-color: #324047;
+  background-color: #080c1e;
   text-align: left;
   font-weight: lighter;
 }
 
-.image-container {
+.text {
   position: relative;
-  width: 50%;
-  display: flex;
-  align-items: center;
+  z-index: 2;
+  color: white;
+  text-align: left;
+  padding: 20px;
+  background: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+  width: 80%;
+  margin: auto;
+}
+
+.overlay {
+  position: absolute;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to left, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0));
+}
+
+.image-container {
+  position: absolute;
+  z-index: 0;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
 }
 
 .image {
   width: 100%;
-  height: auto;
+  height: 100%;
+  object-fit: cover;
 }
 
 button {
   background-color: #00a8a8;
   border: none;
-  color: white; /* White text */
-  padding: 15px 32px; /* Some padding */
-  height: 50%;
-  width: 30%;
-  font-size: 16px; /* Increase font size */
-  border-radius: 25px; /* Rounded corners */
-  cursor: pointer; /* Pointer/hand icon on hover */
+  color: white;
+  padding: 15px 32px;
+  font-size: 16px;
+  border-radius: 25px;
+  cursor: pointer;
 }
 
 button:hover {
-  background-color: #046291; /* Darker green on hover */
-}
-
-.image-container::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: -50%;
-  width: 100%;
-  height: 100%;
-  background: linear-gradient(to left, rgba(139, 128, 128, 0), #324047);
-
-  z-index: 0;
+  background-color: #046291;
 }
 </style>

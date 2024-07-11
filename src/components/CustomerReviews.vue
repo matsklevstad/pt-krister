@@ -1,6 +1,6 @@
 <template>
   <div class="container">
-    <h1>Dette synes andre ... 🤔</h1>
+    <h1>Hva synes kundene mine?🤔</h1>
     <p>
       Å teste ut en ny personlig trener kan være skummelt. Her er hva mine
       kunder har å si om meg:
@@ -32,7 +32,7 @@ export default {
   display: flex;
   flex-direction: column;
   height: 100%;
-  background-color: #324047;
+  background-color: #080c1e;
   justify-content: center;
   align-items: center;
 }

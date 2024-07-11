@@ -1,9 +1,8 @@
 <template>
   <div class="container">
-    <h1>Hei! 😁</h1>
     <div class="content">
       <div class="infobox">
-        <h2>⭐️ Krister Sævik | PT | Online Coach</h2>
+        <h1>Hei, jeg er Krister! 😁</h1>
         <p>
           👉🏻 Jeg er utdannet ved Norges idrettshøgskole og har spesialisert meg
           innen styrke- og kondisjonstrening. Jeg har også erfaring med
@@ -19,7 +18,7 @@
         <p>👉🏻 Ta det første steget mot en bedre versjon av deg selv i dag!</p>
       </div>
       <div>
-        <img src="../assets/pulldown.png" alt="Pull Down Image" />
+        <img src="../assets/krister-saevik.jpg" alt="Pull Down Image" />
       </div>
     </div>
   </div>
@@ -38,14 +37,13 @@ export default {
 .container {
   display: flex;
   flex-direction: column;
-  height: 100%;
-  background-color: #324047;
+  justify-content: space-around;
+  background-color: #080c1e;
 }
 .content {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
-  align-items: center;
 }
 
 .infobox {
@@ -56,16 +54,19 @@ export default {
 }
 
 img {
-  height: 500px;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 50%; /* Make the image round */
 }
 
 h1 {
-  font-size: 4rem;
+  font-size: 3rem;
   font-weight: lighter;
 }
 
 p {
-  font-size: 1.5rem;
+  font-size: 1.2rem;
   font-weight: lighter;
 }
 </style>
