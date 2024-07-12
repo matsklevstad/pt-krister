@@ -7,6 +7,7 @@
     <div class="boxes">
       <div class="grid">
         <div data-aos="flip-left" data-aos-delay="400" class="grid-item">
+          <!--400 per grid-->
           <h3>#1</h3>
           <h2>Kosthold</h2>
           <p>
@@ -85,5 +86,37 @@ h1 {
   border-radius: 8px;
   background-color: #f9f9f9;
   color: black;
+}
+
+@media (max-width: 768px) {
+  .container {
+    padding: 0px;
+  }
+
+  .header {
+    padding-left: 10%;
+  }
+
+  .grid {
+    width: 100%;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(4, auto);
+    justify-items: center;
+  }
+  .grid-item {
+    padding: 5px;
+    width: 85%;
+  }
+  h2 {
+    font-size: medium;
+  }
+  h3 {
+    font-size: small;
+  }
+  p {
+    font-size: x-small;
+  }
+}
+@media (max-width: 480px) {
 }
 </style>

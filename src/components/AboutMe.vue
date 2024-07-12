@@ -5,7 +5,7 @@
         <h1 data-aos="fade-down" data-aos-delay="400">
           Hei, jeg er Krister 😁
         </h1>
-        <p data-aos="fade-left" data-aos-delay="600">
+        <p data-aos="fade-down" data-aos-delay="600">
           👉🏻 Jeg er utdannet ved Norges idrettshøgskole og har spesialisert meg
           innen styrke- og kondisjonstrening. Jeg har også erfaring med
           kostholdsveiledning og skreddersyr treningsprogrammer for å møte
@@ -19,7 +19,7 @@
           👉🏻 Ta det første steget mot en bedre versjon av deg selv i dag!
         </p>
       </div>
-      <div data-aos="fade-right" data-aos-delay="600">
+      <div class="image-container" data-aos="fade-down" data-aos-delay="600">
         <img src="../assets/krister-saevik.jpg" alt="Pull Down Image" />
       </div>
     </div>
@@ -74,7 +74,45 @@ h1 {
 }
 
 p {
-  font-size: 1.2rem;
+  font-size: 1.5rem;
   font-weight: lighter;
+}
+
+@media (max-width: 768px) {
+  .content {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+
+  .infobox {
+    width: 90%;
+  }
+  img {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+  }
+
+  .image-container {
+    margin: auto;
+  }
+
+  p {
+    font-size: medium;
+    font-weight: lighter;
+  }
+  h1 {
+    font-size: xx-large;
+  }
+  @media (max-width: 480px) {
+    p,
+    button {
+      font-size: 1.2rem;
+    }
+
+    button {
+      padding: 10px 20px;
+    }
+  }
 }
 </style>

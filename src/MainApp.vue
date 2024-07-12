@@ -11,9 +11,9 @@
       <section class="page-section" id="services">
         <PTServices />
       </section>
-      <section class="page-section" id="reviews">
+      <!-- <section class="page-section" id="reviews">
         <CustomerReviews />
-      </section>
+      </section> -->
       <!-- Add more sections as needed -->
     </div>
   </div>

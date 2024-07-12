@@ -1,8 +1,8 @@
 <template>
   <div class="container">
     <!-- <img src="@/assets/ai-logo.svg" alt="Logo" /> -->
+    <p @click="navigateTo('start')">⭐️ KRISTER SÆVIK | PT</p>
     <div class="links">
-      <p @click="navigateTo('start')">⭐️ KRISTER SÆVIK | PT</p>
       <p @click="navigateTo('about')">Om meg</p>
       <p @click="navigateTo('services')">Tjenester</p>
       <p @click="navigateTo('reviews')">Referanser</p>
@@ -55,15 +55,22 @@ button {
 button {
   background-color: #324047;
   border: none;
-  color: white; /* White text */
-  padding: 0px 50px 0px 50px; /* Some padding */
+  color: white;
+  padding: 0px 50px 0px 50px;
   height: 50%;
-  font-size: 16px; /* Increase font size */
-  border-radius: 25px; /* Rounded corners */
-  cursor: pointer; /* Pointer/hand icon on hover */
+  font-size: 16px;
+  border-radius: 25px;
+  cursor: pointer;
 }
 
 button:hover {
-  background-color: #046291; /* Darker green on hover */
+  background-color: #046291;
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+  .container {
+    display: none;
+  }
 }
 </style>
