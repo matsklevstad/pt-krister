@@ -51,30 +51,32 @@ html,
 body {
   height: 100%;
   margin: 0;
-  overflow: hidden; /* Prevent body from scrolling */
+  overflow-x: hidden; /* Prevent horizontal scrolling */
 }
 
 #app {
   font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
   color: #efefef;
   background-color: #080c1e;
   height: 100vh;
   display: flex;
   flex-direction: column;
   overflow: hidden; /* Prevent body from scrolling */
+  
 }
 
 .full-page-container {
   flex: 1;
   height: 100vh;
+  width: 100vw; /* Ensure container width is 100% of viewport width */
+  overflow-x: hidden; /* Prevent horizontal scrolling */
   overflow-y: scroll;
   scroll-snap-type: y mandatory;
 }
 
 .page-section {
   height: 100vh;
+  width: 100vw; /* Ensure section width is 100% of viewport width */
   scroll-snap-align: start;
   display: flex;
   justify-content: center;

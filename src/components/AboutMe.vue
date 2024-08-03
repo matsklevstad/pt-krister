@@ -2,10 +2,8 @@
   <div class="container">
     <div class="content">
       <div class="infobox">
-        <h1 data-aos="fade-down" data-aos-delay="400">
-          Hei, jeg er Krister 😁
-        </h1>
-        <p data-aos="fade-down" data-aos-delay="600">
+        <h1>Hei, jeg er Krister 😁</h1>
+        <p>
           👉🏻 Jeg er utdannet ved Norges idrettshøgskole og har spesialisert meg
           innen styrke- og kondisjonstrening. Jeg har også erfaring med
           kostholdsveiledning og skreddersyr treningsprogrammer for å møte
@@ -19,7 +17,7 @@
           👉🏻 Ta det første steget mot en bedre versjon av deg selv i dag!
         </p>
       </div>
-      <div class="image-container" data-aos="fade-down" data-aos-delay="600">
+      <div class="image-container">
         <img src="../assets/krister-saevik.jpg" alt="Pull Down Image" />
       </div>
     </div>
@@ -44,9 +42,11 @@ export default {
 <style scoped>
 .container {
   display: flex;
+  width: 100%;
+  height: 100%;
   flex-direction: column;
-  justify-content: space-around;
-  background-color: #080c1e;
+  justify-content: center;
+  min-height: -webkit-fill-available;
 }
 .content {
   display: flex;
@@ -70,7 +70,7 @@ img {
 
 h1 {
   font-size: 3rem;
-  font-weight: lighter;
+  font-weight: bold;
 }
 
 p {
@@ -83,13 +83,12 @@ p {
     display: flex;
     flex-direction: column-reverse;
   }
-
   .infobox {
     width: 90%;
   }
   img {
-    width: 200px;
-    height: 200px;
+    width: 150px;
+    height: 150px;
     border-radius: 50%;
   }
 
@@ -98,21 +97,11 @@ p {
   }
 
   p {
-    font-size: medium;
+    font-size: 15px;
     font-weight: lighter;
   }
   h1 {
-    font-size: xx-large;
-  }
-  @media (max-width: 480px) {
-    p,
-    button {
-      font-size: 1.2rem;
-    }
-
-    button {
-      padding: 10px 20px;
-    }
+    font-size: 30px;
   }
 }
 </style>

@@ -47,28 +47,15 @@ export default {
   display: flex;
   align-items: center;
   justify-content: center;
-  height: 100vh;
+  height: 100%;
+  width: 100%;
   overflow: hidden;
 }
 
 h1 {
-  font-size: 4rem;
+  font-size: 90px;
+  margin: 0;
   line-height: 1.1;
-}
-
-.text {
-  width: 50%;
-  font-size: 1rem;
-  padding: 20px;
-  margin: auto;
-  z-index: 1;
-  background-color: #080c1e;
-  text-align: left;
-  font-weight: lighter;
-}
-
-p {
-  width: 80%;
 }
 
 .text {
@@ -77,6 +64,8 @@ p {
   color: white;
   text-align: left;
   padding: 20px;
+  font-size: 40px;
+  font-weight: lighter;
   background: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
   width: 80%;
   margin: auto;
@@ -112,12 +101,27 @@ button {
   background-color: #f9f9f9;
   border: none;
   padding: 15px 32px;
-  font-size: 16px;
+  font-size: 20px;
   border-radius: 25px;
   cursor: pointer;
 }
 
 button:hover {
-  background-color:  #c2c2c2;
+  background-color: #c2c2c2;
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+  h1 {
+    font-size: 35px;
+  }
+
+  .text {
+    font-size: 20px;
+  }
+
+  button {
+    font-size: 16px;
+  }
 }
 </style>

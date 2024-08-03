@@ -1,6 +1,5 @@
 <template>
   <div class="container">
-    <!-- <img src="@/assets/ai-logo.svg" alt="Logo" /> -->
     <p @click="navigateTo('start')">⭐️ KRISTER SÆVIK | PT</p>
     <div class="links">
       <p @click="navigateTo('about')">Om meg</p>
@@ -25,11 +24,6 @@ export default {
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
-img {
-  width: 100px;
-  height: 100px;
-}
-
 p,
 button {
   font-size: 1.5rem;
@@ -42,6 +36,7 @@ button {
   justify-content: space-around;
   align-items: center;
   background-color: #080c1e;
+  width: 100%;
 }
 
 .links {
