@@ -1,6 +1,6 @@
 <template>
   <div class="container">
-    <div class="content">
+    <div class="content" data-aos="flip-down" data-aos-delay="200">
       <div class="infobox">
         <p>PERSONLIG TRENER</p>
         <h1>Hei, jeg er Krister! 😁</h1>

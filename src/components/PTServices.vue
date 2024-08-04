@@ -1,12 +1,12 @@
 <template>
   <div class="container">
-    <div class="header">
+    <div class="header" data-aos="fade-left">
       <p>HVA JEG TILBYR</p>
       <h1>Tjenester</h1>
     </div>
     <div class="boxes">
       <div class="grid">
-        <div class="grid-item">
+        <div class="grid-item" data-aos="flip-down" data-aos-delay="400" >
           <!--400 per grid-->
           <h3>#1</h3>
           <h2>🥦 Kosthold</h2>
@@ -16,7 +16,7 @@
             helsefordeler.
           </p>
         </div>
-        <div class="grid-item">
+        <div class="grid-item"  data-aos="flip-down" data-aos-delay="800">
           <h3>#2</h3>
           <h2>🏋🏻‍♀️ Trening</h2>
           <p>
@@ -25,7 +25,7 @@
             effektivitet, progresjon og motivasjon.
           </p>
         </div>
-        <div class="grid-item">
+        <div class="grid-item"  data-aos="flip-down" data-aos-delay="1200">
           <h3>#3</h3>
           <h2>💬 Veiledning</h2>
           <p>
@@ -34,34 +34,7 @@
             for dine individuelle mål.
           </p>
         </div>
-        <div class="grid-item">
-          <h3>#4</h3>
-          <h2>📊 Oppfølging</h2>
-          <p>
-            Jeg følger nøye opp din fremgang og tilpasser planene etter dine
-            individuelle behov, for å sikre at du oppnår og opprettholder
-            ønskede resultater.
-          </p>
-        </div>
-        <div class="grid-item">
-          <h3>#4</h3>
-          <h2>📊 Oppfølging</h2>
-          <p>
-            Jeg følger nøye opp din fremgang og tilpasser planene etter dine
-            individuelle behov, for å sikre at du oppnår og opprettholder
-            ønskede resultater.
-          </p>
-        </div>
-        <div class="grid-item">
-          <h3>#4</h3>
-          <h2>📊 Oppfølging</h2>
-          <p>
-            Jeg følger nøye opp din fremgang og tilpasser planene etter dine
-            individuelle behov, for å sikre at du oppnår og opprettholder
-            ønskede resultater.
-          </p>
-        </div>
-        <div class="grid-item">
+        <div class="grid-item"  data-aos="flip-down" data-aos-delay="1600">
           <h3>#4</h3>
           <h2>📊 Oppfølging</h2>
           <p>

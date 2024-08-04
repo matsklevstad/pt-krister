@@ -2,10 +2,10 @@
   <div class="container">
     <p @click="navigateTo('start')">⭐️ KRISTER SÆVIK | PT</p>
     <div class="links">
-      <p @click="navigateTo('about')">Om meg</p>
-      <p @click="navigateTo('services')">Tjenester</p>
-      <p @click="navigateTo('reviews')">Referanser</p>
-      <p @click="navigateTo('blog')">Blogg</p>
+      <p @click="navigateTo('about')">OM MEG</p>
+      <p @click="navigateTo('services')">TJENESTER</p>
+      <p @click="navigateTo('reviews')">REFERANSER</p>
+      <p @click="navigateTo('blog')">BLOGG</p>
     </div>
     <button>KONTAKT MEG</button>
   </div>
