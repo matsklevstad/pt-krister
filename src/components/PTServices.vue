@@ -1,6 +1,6 @@
 <template>
   <div class="container">
-    <div class="header" data-aos="fade-left">
+    <div class="header">
       <p>HVA JEG TILBYR</p>
       <h1>Tjenester</h1>
     </div>
@@ -106,7 +106,7 @@ p {
   }
 
   .header {
-    padding-left: 10%;
+    padding-left: 5%;
     margin-top: 10px;
   }
 

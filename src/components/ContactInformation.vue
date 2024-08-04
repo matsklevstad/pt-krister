@@ -38,14 +38,14 @@
 
 .text-container {
   background: linear-gradient(to bottom, rgb(21, 27, 41) 0%, #080c1e 100%);
+  padding-left: 10%;
+  padding-right: 10%;
 }
 
 .links-container {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  padding-left: 10%;
-  padding-right: 10%;
   color: white;
 }
 a {
@@ -58,7 +58,6 @@ i {
 
 h1 {
   font-size: 60px;
-  padding-left: 10%;
 }
 p {
   font-size: 20px;
@@ -70,6 +69,11 @@ p {
   }
   p {
     font-size: 10px;
+  }
+
+  .text-container {
+    padding-left: 5%;
+    padding-right: 5%;
   }
 }
 </style>
