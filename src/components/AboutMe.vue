@@ -1,6 +1,7 @@
 <template>
   <div class="container">
-    <div class="content" data-aos="flip-up">
+    <div class="content">
+      <!-- data-aos="flip-up"> -->
       <div class="infobox">
         <p>PERSONLIG TRENER</p>
         <h1>Hei, jeg er Krister! 😁</h1>
@@ -17,6 +18,12 @@
           <br /><br />
           Sammen kan vi nå dine mål og gjøre trening til en positiv og varig del
           av din livsstil.
+        </p>
+        <p>
+          <i class="fa-brands fa-instagram"></i>
+          <a href="https://www.instagram.com/Kristersaevik/"
+            >Følg meg på Instagram</a
+          >
         </p>
       </div>
       <div class="image-container">
@@ -80,6 +87,11 @@ h1 {
 p {
   font-size: 20px;
   font-weight: lighter;
+}
+
+a {
+  margin-left: 4px;
+  color: white;
 }
 
 @media (max-width: 768px) {

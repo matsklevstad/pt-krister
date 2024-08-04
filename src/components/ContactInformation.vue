@@ -4,23 +4,26 @@
     <div class="text-container">
       <h1>Kontaktinformasjon</h1>
       <div class="links-container">
+       
         <p>
-          <strong>EPOST:</strong>
+          <i class="fa-solid fa-envelope"></i>
+          <strong> EPOST:</strong>
           <br />
           <a href="mailto:krister-saevik@gmail.com">krister-saevik@gmail.com</a>
         </p>
         <p>
-          <strong>TELEFON:</strong>
+          <i class="fa-solid fa-phone"></i>
+          <strong> TELEFON:</strong>
           <br />
           <a href="tel:+4799385083">+47 993 85 083</a>
         </p>
         <p>
-          <strong>ORG.NR:</strong>
+          <i class="fa-solid fa-id-card"></i>
+          <strong> ORG.NR:</strong>
           <br />
           930 356 476
         </p>
       </div>
-      
     </div>
   </div>
 </template>
@@ -52,6 +55,10 @@
 }
 a {
   color: white;
+}
+
+i {
+  margin-right: 2px;
 }
 
 h1 {
