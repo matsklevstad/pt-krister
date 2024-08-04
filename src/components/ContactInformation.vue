@@ -4,7 +4,6 @@
     <div class="text-container">
       <h1>Kontaktinformasjon</h1>
       <div class="links-container">
-       
         <p>
           <i class="fa-solid fa-envelope"></i>
           <strong> EPOST:</strong>
@@ -38,11 +37,7 @@
 }
 
 .text-container {
-  background: linear-gradient(
-    to bottom,
-    rgb(23, 29, 40) 0%,
-    rgba(22, 27, 38, 0) 100%
-  );
+  background: linear-gradient(to bottom, rgb(21, 27, 41) 0%, #080c1e 100%);
 }
 
 .links-container {
