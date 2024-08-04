@@ -6,7 +6,7 @@
     </div>
     <div class="boxes">
       <div class="grid">
-        <div class="grid-item" data-aos="flip-down" data-aos-delay="400" >
+        <div class="grid-item" data-aos="flip-down" data-aos-delay="100">
           <!--400 per grid-->
           <h3>#1</h3>
           <h2>🥦 Kosthold</h2>
@@ -16,7 +16,7 @@
             helsefordeler.
           </p>
         </div>
-        <div class="grid-item"  data-aos="flip-down" data-aos-delay="800">
+        <div class="grid-item" data-aos="flip-down" data-aos-delay="200">
           <h3>#2</h3>
           <h2>🏋🏻‍♀️ Trening</h2>
           <p>
@@ -25,7 +25,7 @@
             effektivitet, progresjon og motivasjon.
           </p>
         </div>
-        <div class="grid-item"  data-aos="flip-down" data-aos-delay="1200">
+        <div class="grid-item" data-aos="flip-down" data-aos-delay="300">
           <h3>#3</h3>
           <h2>💬 Veiledning</h2>
           <p>
@@ -34,7 +34,7 @@
             for dine individuelle mål.
           </p>
         </div>
-        <div class="grid-item"  data-aos="flip-down" data-aos-delay="1600">
+        <div class="grid-item" data-aos="flip-down" data-aos-delay="400">
           <h3>#4</h3>
           <h2>📊 Oppfølging</h2>
           <p>
@@ -67,11 +67,11 @@ export default {
   flex-direction: column;
   display: flex;
   padding-left: 10%;
+  overflow: hidden;
 }
 
 h1 {
   font-size: 40px;
-  line-height: 1.1;
 }
 .grid {
   width: 80%;

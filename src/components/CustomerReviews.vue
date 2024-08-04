@@ -56,6 +56,7 @@ export default {
   background-color: #080c1e;
   margin-top: 100px;
   padding-left: 10%;
+  overflow: hidden;
 }
 
 h1 {

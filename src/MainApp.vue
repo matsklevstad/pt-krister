@@ -11,10 +11,12 @@
       <section class="page-section" id="services">
         <PTServices />
       </section>
-     <!--  <section class="page-section" id="reviews">
+      <!--  <section class="page-section" id="reviews">
         <CustomerReviews />
       </section> -->
-      <!-- Add more sections as needed -->
+      <section class="page-section" id="contact">
+        <ContactInformation />
+      </section>
     </div>
   </div>
 </template>
@@ -25,6 +27,7 @@ import StartPage from "./components/StartPage.vue";
 import AboutMe from "./components/AboutMe.vue";
 //import CustomerReviews from "./components/CustomerReviews.vue";
 import PTServices from "./components/PTServices.vue";
+import ContactInformation from "./components/ContactInformation.vue";
 
 export default {
   name: "MainApp",
@@ -32,8 +35,9 @@ export default {
     PageHeader,
     StartPage,
     AboutMe,
-    //CustomerReviews,
     PTServices,
+    //CustomerReviews,
+    ContactInformation,
   },
   methods: {
     scrollToSection(sectionId) {
@@ -58,7 +62,7 @@ body {
   font-family: Avenir, Helvetica, Arial, sans-serif;
   color: #efefef;
   background-color: #080c1e;
-  height: 100vh;
+ 
   display: flex;
   flex-direction: column;
   overflow: hidden; /* Prevent body from scrolling */
@@ -72,7 +76,6 @@ body {
 }
 
 .page-section {
-  min-height: 100vh; /* Ensure section takes at least the full viewport height */
   width: 100vw; /* Ensure section width is 100% of viewport width */
   scroll-snap-align: start;
   display: flex;

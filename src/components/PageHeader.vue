@@ -7,7 +7,7 @@
       <p @click="navigateTo('reviews')">REFERANSER</p>
       <p @click="navigateTo('blog')">BLOGG</p>
     </div>
-    <button>KONTAKT MEG</button>
+    <button @click="navigateTo('contact')">KONTAKT MEG</button>
   </div>
 </template>
 
@@ -52,7 +52,7 @@ button {
   border: none;
   color: white;
   padding: 0px 50px 0px 50px;
-  height: 50%;
+  height: 50px;
   font-size: 16px;
   border-radius: 25px;
   cursor: pointer;
