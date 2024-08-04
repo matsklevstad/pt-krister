@@ -11,9 +11,9 @@
       <section class="page-section" id="services">
         <PTServices />
       </section>
-      <section class="page-section" id="reviews">
+     <!--  <section class="page-section" id="reviews">
         <CustomerReviews />
-      </section>
+      </section> -->
       <!-- Add more sections as needed -->
     </div>
   </div>
@@ -23,7 +23,7 @@
 import PageHeader from "./components/PageHeader.vue";
 import StartPage from "./components/StartPage.vue";
 import AboutMe from "./components/AboutMe.vue";
-import CustomerReviews from "./components/CustomerReviews.vue";
+//import CustomerReviews from "./components/CustomerReviews.vue";
 import PTServices from "./components/PTServices.vue";
 
 export default {
@@ -32,7 +32,7 @@ export default {
     PageHeader,
     StartPage,
     AboutMe,
-    CustomerReviews,
+    //CustomerReviews,
     PTServices,
   },
   methods: {
