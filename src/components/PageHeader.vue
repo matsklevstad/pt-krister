@@ -1,7 +1,7 @@
 <template>
   <div class="nav-menu">
     <div class="nav-buttons">
-      <p @click="navigateTo('start')">KRISTER SÆVIK | PT</p>
+      <p @click="navigateTo('start')">PT KRISTER SÆVIK</p>
       <i @click="showMenu" class="fa fa-bars"></i>
     </div>
     <div
@@ -51,9 +51,11 @@ export default {
 
 .nav-content {
   display: flex;
-  justify-content: space-evenly;
+  justify-content: space-between;
   align-items: center;
+  width: 70%;
   font-size: 25px;
+
 }
 
 .nav-items {
@@ -86,6 +88,10 @@ i {
   display: none; /* Hidden by default on larger screens */
 }
 
+p {
+  font-size: 25px;
+}
+
 /* Media Queries for smaller screens */
 @media (max-width: 768px) {
   .nav-menu {
@@ -115,6 +121,7 @@ i {
     opacity: 1;
     visibility: visible;
     height: auto; /* Allow content height */
+    margin-bottom: 20px;
   }
   /*@TODO: Closed menu takes up space after it is closed/*/
   .closed-menu {
