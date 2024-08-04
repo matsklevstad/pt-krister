@@ -39,6 +39,7 @@
 .text-container {
   background: linear-gradient(to bottom, rgb(21, 27, 41) 0%, #080c1e 100%);
   padding-left: 10%;
+  margin-bottom: 200px;
   padding-right: 10%;
 }
 
@@ -74,6 +75,7 @@ p {
   .text-container {
     padding-left: 5%;
     padding-right: 5%;
+    margin-bottom: 75px;
   }
 }
 </style>

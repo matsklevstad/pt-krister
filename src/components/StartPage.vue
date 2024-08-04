@@ -58,7 +58,7 @@ h1 {
   padding: 20px;
   font-size: 30px;
   font-weight: lighter;
-  background: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+  background: rgba(0, 0, 0, 0.5);
   width: 80%;
   margin: auto;
 }
@@ -81,6 +81,19 @@ h1 {
   width: 100%;
   height: 100%;
   overflow: hidden;
+}
+.image-container::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 30%; /* Adjust height as needed */
+  background-image: linear-gradient(
+    to bottom,
+    rgba(20, 20, 20, 0),
+    rgba(8, 12, 30, 0.9)
+  );
 }
 
 .image {
