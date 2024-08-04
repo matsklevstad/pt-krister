@@ -10,13 +10,7 @@
         muskler eller bare forbedre din generelle form, er jeg her for å støtte
         deg på hvert steg av veien.
       </p>
-      <button
-        data-aos="fade-up"
-        data-aos-delay="600"
-        @click="scrollToNextSection"
-      >
-        JEG VIL VITE MER!
-      </button>
+      <button @click="scrollToNextSection">JEG VIL VITE MER!</button>
     </div>
     <div class="image-container">
       <img class="image" src="../assets/lifting.jpeg" alt="Krister" />
@@ -47,15 +41,13 @@ export default {
   display: flex;
   align-items: center;
   justify-content: center;
-  height: 100%;
-  width: 100%;
+  height: 100vh;
   overflow: hidden;
 }
 
 h1 {
-  font-size: 90px;
+  font-size: 50px;
   margin: 0;
-  line-height: 1.1;
 }
 
 .text {
@@ -64,7 +56,7 @@ h1 {
   color: white;
   text-align: left;
   padding: 20px;
-  font-size: 40px;
+  font-size: 30px;
   font-weight: lighter;
   background: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
   width: 80%;

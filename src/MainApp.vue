@@ -11,9 +11,9 @@
       <section class="page-section" id="services">
         <PTServices />
       </section>
-      <!-- <section class="page-section" id="reviews">
+      <section class="page-section" id="reviews">
         <CustomerReviews />
-      </section> -->
+      </section>
       <!-- Add more sections as needed -->
     </div>
   </div>
@@ -23,7 +23,7 @@
 import PageHeader from "./components/PageHeader.vue";
 import StartPage from "./components/StartPage.vue";
 import AboutMe from "./components/AboutMe.vue";
-//import CustomerReviews from "./components/CustomerReviews.vue";
+import CustomerReviews from "./components/CustomerReviews.vue";
 import PTServices from "./components/PTServices.vue";
 
 export default {
@@ -32,7 +32,7 @@ export default {
     PageHeader,
     StartPage,
     AboutMe,
-    //CustomerReviews,
+    CustomerReviews,
     PTServices,
   },
   methods: {
@@ -62,24 +62,29 @@ body {
   display: flex;
   flex-direction: column;
   overflow: hidden; /* Prevent body from scrolling */
-  
 }
 
 .full-page-container {
   flex: 1;
-  height: 100vh;
   width: 100vw; /* Ensure container width is 100% of viewport width */
   overflow-x: hidden; /* Prevent horizontal scrolling */
-  overflow-y: scroll;
-  scroll-snap-type: y mandatory;
+  overflow-y: auto; /* Allow vertical scrolling */
 }
 
 .page-section {
-  height: 100vh;
+  min-height: 100vh; /* Ensure section takes at least the full viewport height */
   width: 100vw; /* Ensure section width is 100% of viewport width */
   scroll-snap-align: start;
   display: flex;
   justify-content: center;
   align-items: center;
+  box-sizing: border-box; /* Include padding and border in element's total width and height */
+  overflow-y: auto; /* Allow vertical scrolling within sections if content overflows */
+}
+
+/* Optional: Add padding or margin to create spacing inside sections */
+.page-section-content {
+  padding: 20px;
+  width: 100%;
 }
 </style>

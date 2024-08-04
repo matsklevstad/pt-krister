@@ -43,6 +43,33 @@
             ønskede resultater.
           </p>
         </div>
+        <div class="grid-item">
+          <h3>#4</h3>
+          <h2>📊 Oppfølging</h2>
+          <p>
+            Jeg følger nøye opp din fremgang og tilpasser planene etter dine
+            individuelle behov, for å sikre at du oppnår og opprettholder
+            ønskede resultater.
+          </p>
+        </div>
+        <div class="grid-item">
+          <h3>#4</h3>
+          <h2>📊 Oppfølging</h2>
+          <p>
+            Jeg følger nøye opp din fremgang og tilpasser planene etter dine
+            individuelle behov, for å sikre at du oppnår og opprettholder
+            ønskede resultater.
+          </p>
+        </div>
+        <div class="grid-item">
+          <h3>#4</h3>
+          <h2>📊 Oppfølging</h2>
+          <p>
+            Jeg følger nøye opp din fremgang og tilpasser planene etter dine
+            individuelle behov, for å sikre at du oppnår og opprettholder
+            ønskede resultater.
+          </p>
+        </div>
       </div>
     </div>
   </div>

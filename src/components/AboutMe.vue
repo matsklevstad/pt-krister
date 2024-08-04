@@ -2,19 +2,21 @@
   <div class="container">
     <div class="content">
       <div class="infobox">
-        <h1>Hei, jeg er Krister 😁</h1>
+        <p>PERSONLIG TRENER</p>
+        <h1>Hei, jeg er Krister! 😁</h1>
         <p>
-          👉🏻 Jeg er utdannet ved Norges idrettshøgskole og har spesialisert meg
-          innen styrke- og kondisjonstrening. Jeg har også erfaring med
-          kostholdsveiledning og skreddersyr treningsprogrammer for å møte
-          individuelle mål og behov.
+          Jeg heter Krister Sævik, og jeg er en sertifisert personlig trener med
+          en lidenskap for å hjelpe folk med å oppnå sine helse- og treningsmål.
+          Med over 10 års erfaring i treningsbransjen, har jeg jobbet med et
+          bredt spekter av klienter, fra nybegynnere til eliteutøvere.
           <br /><br />
-          👉🏻 Med åtte års erfaring i treningsbransjen har jeg hjulpet utallige
-          klienter med å oppnå deres drømmekropp og opprettholde en sunn
-          livsstil. Min lidenskap for fitness og helse er drivkraften bak
-          suksessen til mine klienter.
+          Gjennom årene har jeg oppnådd flere sertifiseringer innen
+          styrketrening, ernæring, og rehabilitering. Jeg er dedikert til å
+          holde meg oppdatert på de nyeste treningsmetodene og forskningen for å
+          sikre at mine klienter får den beste og mest effektive treningen.
           <br /><br />
-          👉🏻 Ta det første steget mot en bedre versjon av deg selv i dag!
+          Sammen kan vi nå dine mål og gjøre trening til en positiv og varig del
+          av din livsstil.
         </p>
       </div>
       <div class="image-container">
@@ -43,45 +45,55 @@ export default {
 .container {
   display: flex;
   width: 100%;
-  height: 100%;
+  height: 100vh;
   flex-direction: column;
-  justify-content: center;
-  min-height: -webkit-fill-available;
+  justify-content: flex-start;
+  margin-top: 200px;
 }
 .content {
   display: flex;
   flex-direction: row;
-  justify-content: space-around;
+  padding-left: 10%;
+  gap: 50px;
 }
 
 .infobox {
-  padding: 20px;
-  width: 40%;
+  width: 50%;
   text-align: left;
   font-weight: lighter;
 }
 
 img {
-  width: 100%;
+  width: 300%;
+  max-width: 600px;
   height: 100%;
+  max-height: 600px;
   object-fit: cover;
   border-radius: 50%; /* Make the image round */
 }
 
 h1 {
-  font-size: 3rem;
+  font-size: 50px;
   font-weight: bold;
 }
 
 p {
-  font-size: 1.5rem;
+  font-size: 20px;
   font-weight: lighter;
 }
 
 @media (max-width: 768px) {
+  .container {
+    margin-top: 0;
+  }
   .content {
     display: flex;
-    flex-direction: column-reverse;
+    flex-direction: column;
+    height: 100%;
+    padding-left: 0;
+    gap: 0;
+    justify-content: center;
+    align-items: center;
   }
   .infobox {
     width: 90%;
@@ -93,7 +105,11 @@ p {
   }
 
   .image-container {
-    margin: auto;
+    width: 100vw;
+    height: 100%;
+    align-items: start;
+    display: flex;
+    justify-content: center;
   }
 
   p {
