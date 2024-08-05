@@ -3,8 +3,10 @@
     <div class="content">
       <!-- data-aos="flip-up"> -->
       <div class="infobox">
-        <p>PERSONLIG TRENER</p>
-        <h1>Hei, jeg er Krister! 😁</h1>
+        <div class="header">
+          <p>PERSONLIG TRENER</p>
+          <h1>😁 Hei, jeg er Krister!</h1>
+        </div>
         <p>
           Jeg heter Krister Sævik, og jeg er en sertifisert personlig trener med
           en lidenskap for å hjelpe folk med å oppnå sine helse- og treningsmål.
@@ -18,12 +20,6 @@
           <br /><br />
           Sammen kan vi nå dine mål og gjøre trening til en positiv og varig del
           av din livsstil.
-        </p>
-        <p>
-          <i class="fa-brands fa-instagram"></i>
-          <a href="https://www.instagram.com/Kristersaevik/"
-            >Følg meg på Instagram</a
-          >
         </p>
       </div>
       <div class="image-container">
@@ -126,8 +122,11 @@ a {
 
   p {
     font-size: 15px;
-    font-weight: lighter;
   }
+  .header p {
+    font-size: 20px;
+  }
+
   h1 {
     font-size: 30px;
   }

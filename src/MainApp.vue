@@ -11,6 +11,9 @@
       <section class="page-section" id="services">
         <PTServices />
       </section>
+      <section class="page-section" id="social">
+        <SocialMedia />
+      </section>
       <!--  <section class="page-section" id="reviews">
         <CustomerReviews />
       </section> -->
@@ -27,6 +30,7 @@ import StartPage from "./components/StartPage.vue";
 import AboutMe from "./components/AboutMe.vue";
 //import CustomerReviews from "./components/CustomerReviews.vue";
 import PTServices from "./components/PTServices.vue";
+import SocialMedia from "./components/SocialMedia.vue";
 import ContactInformation from "./components/ContactInformation.vue";
 
 export default {
@@ -37,6 +41,7 @@ export default {
     AboutMe,
     PTServices,
     //CustomerReviews,
+    SocialMedia,
     ContactInformation,
   },
   methods: {
@@ -62,7 +67,7 @@ body {
   font-family: Avenir, Helvetica, Arial, sans-serif;
   color: #efefef;
   background-color: #080c1e;
- 
+
   display: flex;
   flex-direction: column;
   overflow: hidden; /* Prevent body from scrolling */

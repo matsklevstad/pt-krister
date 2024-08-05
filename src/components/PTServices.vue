@@ -2,14 +2,13 @@
   <div class="container">
     <div class="header">
       <p>HVA JEG TILBYR</p>
-      <h1>Tjenester</h1>
+      <h1>📦 Tjenester</h1>
     </div>
     <div class="boxes">
       <div class="grid">
         <div class="grid-item" data-aos="flip-down" data-aos-delay="100">
           <!--400 per grid-->
-          <h3>#1</h3>
-          <h2>🥦 Kosthold</h2>
+          <h1>🥦 Kosthold</h1>
           <p>
             Jeg setter opp skreddersydde kostholdsplaner basert på dine mål og
             preferanser, med fokus på balanse, næring og langsiktige
@@ -17,8 +16,7 @@
           </p>
         </div>
         <div class="grid-item" data-aos="flip-down" data-aos-delay="200">
-          <h3>#2</h3>
-          <h2>🏋🏻‍♀️ Trening</h2>
+          <h1>🏋🏻‍♀️ Trening</h1>
           <p>
             Jeg utarbeider skreddersydde treningsprogrammer tilpasset dine
             fysiske mål og treningsnivå, med en metodikk som fremmer
@@ -26,8 +24,7 @@
           </p>
         </div>
         <div class="grid-item" data-aos="flip-down" data-aos-delay="300">
-          <h3>#3</h3>
-          <h2>💬 Veiledning</h2>
+          <h1>💬 Veiledning</h1>
           <p>
             Jeg tilbyr personlig veiledning og støtte gjennom hele din helse- og
             treningsreise, med en tilnærming som skaper en støttende atmosfære
@@ -35,8 +32,7 @@
           </p>
         </div>
         <div class="grid-item" data-aos="flip-down" data-aos-delay="400">
-          <h3>#4</h3>
-          <h2>📊 Oppfølging</h2>
+          <h1>📊 Oppfølging</h1>
           <p>
             Jeg følger nøye opp din fremgang og tilpasser planene etter dine
             individuelle behov, for å sikre at du oppnår og opprettholder
@@ -63,7 +59,7 @@ export default {
 <style scoped>
 .container {
   width: 100%;
-  height: 100%;
+  height: 90vh;
   flex-direction: column;
   display: flex;
   padding-left: 10%;
@@ -71,7 +67,7 @@ export default {
 }
 
 h1 {
-  font-size: 40px;
+  font-size: 35px;
 }
 .grid {
   width: 80%;
@@ -88,14 +84,6 @@ h1 {
   color: black;
 }
 
-h3 {
-  font-size: 30px;
-  margin: 0;
-}
-h2 {
-  font-size: 25px;
-  margin: 0;
-}
 p {
   font-size: 20px;
 }
@@ -103,15 +91,11 @@ p {
 @media (max-width: 768px) {
   .container {
     padding: 0px;
+    height: 100vh;
   }
 
   .header {
     padding-left: 5%;
-    margin-top: 10px;
-  }
-
-  .header p {
-    font-size: 20px;
   }
 
   .grid {
@@ -122,19 +106,23 @@ p {
     gap: 10px;
   }
   .grid-item {
-    padding: 7px;
+    padding: 10px;
     width: 90%;
   }
-  h2 {
-    font-size: large;
+  .grid-item h1 {
+    font-size: 20px;
     margin: 0;
   }
-  h3 {
-    font-size: small;
-    margin: 0;
+  h1 {
+    font-size: 30px;
   }
+
+  .header p {
+    font-size: 20px;
+  }
+
   p {
-    font-size: small;
+    font-size: 15px;
     margin: 0;
   }
 }
