@@ -67,7 +67,6 @@ body {
   font-family: Avenir, Helvetica, Arial, sans-serif;
   color: #efefef;
   background-color: #080c1e;
-
   display: flex;
   flex-direction: column;
   overflow: hidden; /* Prevent body from scrolling */

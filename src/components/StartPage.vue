@@ -4,11 +4,10 @@
     <div class="text">
       <h1 data-aos="fade-right" data-aos-delay="200">🫵 Vil du komme i form?</h1>
       <p data-aos="fade-left" data-aos-delay="400">
-        Velkommen til din vei mot bedre helse og velvære! Jeg tilbyr
-        skreddersydde treningsprogrammer og personlig oppfølging for å hjelpe
-        deg med å nå dine mål. Uansett om du ønsker å gå ned i vekt, bygge
-        muskler eller bare forbedre din generelle form, er jeg her for å støtte
-        deg på hvert steg av veien.
+        Velkommen til din vei mot bedre helse og velvære! Jeg tilbyr personlig
+        oppfølging og treningsprogrammer for å hjelpe deg med å nå dine mål.
+        Uansett om du ønsker å gå ned i vekt, bygge muskler eller bare forbedre
+        din generelle form, er jeg her for å støtte deg på hvert steg av veien.
       </p>
       <button @click="scrollToNextSection">JEG VIL VITE MER!</button>
     </div>
@@ -41,6 +40,8 @@ export default {
   display: flex;
   height: 100vh;
   overflow: hidden;
+  padding-left: 10%;
+  padding-right: 10%;
 }
 
 h1 {
@@ -57,7 +58,6 @@ h1 {
   font-weight: lighter;
   background: rgba(8, 12, 30, 0.6);
   border-radius: 24px;
-  width: 80%;
   margin: auto;
 }
 .overlay {
@@ -114,10 +114,10 @@ h1 {
 }
 
 button {
-  background-color: #f9f9f9;
+  background-color: white;
   border: none;
   padding: 15px 32px;
-  font-size: 20px;
+  font-size: 24px;
   border-radius: 25px;
   cursor: pointer;
 }

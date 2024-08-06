@@ -4,7 +4,7 @@
       <p>SOSIALE MEDIER</p>
       <h1>👉🏻 Følg meg på Instagram</h1>
     </div>
-    <div class="insta-container" data-aos="fade-up">
+    <div class="insta-container">
       <iframe
         :src="instagramUrl"
         frameborder=""
@@ -59,8 +59,7 @@ iframe {
   width: 100%;
   background-color: #324047;
   border: 1px solid white;
-  height: 800px;
-
+  height: 1028px;
   border-radius: 8px;
 }
 
@@ -82,7 +81,7 @@ iframe {
   }
 
   iframe {
-    height: 400px;
+    height: 454px;
   }
 }
 </style>
