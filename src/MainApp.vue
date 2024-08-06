@@ -1,6 +1,8 @@
 <template>
   <div id="app">
-    <PageHeader @scrollTo="scrollToSection" />
+    <div class="sticky-header">
+      <PageHeader @scrollTo="scrollToSection" />
+    </div>
     <div class="full-page-container" @scrollTo="scrollToSection">
       <section class="page-section" id="start">
         <StartPage @scrollTo="scrollToSection" />
@@ -70,6 +72,14 @@ body {
   display: flex;
   flex-direction: column;
   overflow: hidden; /* Prevent body from scrolling */
+}
+
+.sticky-header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1000; /* Ensures the header stays above other content */
+  background-color: #080c1e; /* Ensures the header has a background */
 }
 
 .full-page-container {
