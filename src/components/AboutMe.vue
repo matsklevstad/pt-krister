@@ -1,8 +1,8 @@
 <template>
   <div class="container">
-    <div class="content" data-aos="fade-up">
+    <div class="content">
       <!-- data-aos="flip-up"> -->
-      <div class="infobox">
+      <div class="infobox" data-aos="fade-up" data-aos-duration="700">
         <div class="header">
           <p>PERSONLIG TRENER</p>
           <h1>😁 Hei, jeg er Krister!</h1>
@@ -22,7 +22,7 @@
           av din livsstil.
         </p>
       </div>
-      <div class="image-container">
+      <div class="image-container" data-aos="fade-up" data-aos-duration="700">  
         <img src="../assets/krister-saevik.jpg" alt="Pull Down Image" />
       </div>
     </div>
@@ -51,12 +51,13 @@ export default {
   height: 100vh;
   flex-direction: column;
   justify-content: flex-start;
-  margin-top: 200px;
+  padding-top: 200px;
+  padding-left: 10%;
+  padding-right: 20%;
 }
 .content {
   display: flex;
   flex-direction: row;
-  padding-left: 10%;
   gap: 50px;
 }
 
@@ -93,17 +94,18 @@ a {
 @media (max-width: 768px) {
   .container {
     margin-top: 0;
+    padding: 0;
   }
   .content {
     display: flex;
     flex-direction: column;
-    height: 100%;
-    padding-left: 0;
-    gap: 0;
+
+    gap: 0px;
     justify-content: center;
-    align-items: center;
   }
   .infobox {
+    padding-left: 5%;
+    padding-right: 5%;
     width: 90%;
   }
   img {

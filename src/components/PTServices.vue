@@ -2,7 +2,7 @@
   <div class="container">
     <div class="header" data-aos="fade-up">
       <p>HVA JEG TILBYR</p>
-      <h1>📦 Tjenester</h1>
+      <h1>📦 Tjenestene mine</h1>
     </div>
     <div class="boxes">
       <div class="grid">
@@ -63,6 +63,7 @@ export default {
   flex-direction: column;
   display: flex;
   padding-left: 10%;
+  padding-right: 20%;
   overflow: hidden;
 }
 
@@ -70,7 +71,7 @@ h1 {
   font-size: 35px;
 }
 .grid {
-  width: 80%;
+
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 20px;

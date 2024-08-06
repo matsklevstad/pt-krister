@@ -2,9 +2,9 @@
   <div class="container">
     <div class="header" data-aos="fade-up">
       <p>SOSIALE MEDIER</p>
-      <h1>👉🏻 Instagram</h1>
+      <h1>👉🏻 Følg meg på Instagram</h1>
     </div>
-    <div class="insta-container" data-aos="fade-up" data-aos-delay="500" >
+    <div class="insta-container" data-aos="fade-up">
       <iframe
         :src="instagramUrl"
         frameborder=""
@@ -39,10 +39,8 @@ export default {
   flex-direction: column;
   display: flex;
   overflow: hidden;
-}
-
-.header {
   padding-left: 10%;
+  padding-right: 20%;
 }
 
 h1 {
@@ -55,25 +53,24 @@ p {
 
 .insta-container {
   display: flex;
-  justify-content: center;
 }
 
 iframe {
-  width: 70%;
+  width: 100%;
   background-color: #324047;
-  padding: 5%;
+  border: 1px solid white;
   height: 800px;
-  border: none;
-  border-radius: 24px;
+
+  border-radius: 8px;
 }
 
 @media (max-width: 768px) {
   .container {
-    padding: 0px;
+    padding-left: 5%;
+    padding-right: 5%;
   }
 
   .header {
-    padding-left: 5%;
     margin-top: 10px;
   }
   p {
