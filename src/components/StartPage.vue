@@ -2,7 +2,7 @@
   <div data-aos="fade-up" class="wrapper">
     <div class="overlay"></div>
     <div class="text">
-      <h1 data-aos="fade-right" data-aos-delay="200">Vil du komme i form? 🫵</h1>
+      <h1 data-aos="fade-right" data-aos-delay="200">🫵 Vil du komme i form?</h1>
       <p data-aos="fade-left" data-aos-delay="400">
         Velkommen til din vei mot bedre helse og velvære! Jeg tilbyr
         skreddersydde treningsprogrammer og personlig oppfølging for å hjelpe
@@ -62,7 +62,6 @@ h1 {
   width: 80%;
   margin: auto;
 }
-
 .overlay {
   position: absolute;
   z-index: 1;
@@ -72,7 +71,6 @@ h1 {
   height: 100%;
   background: linear-gradient(to left, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0));
 }
-
 .image-container {
   position: absolute;
   z-index: 0;
@@ -82,19 +80,36 @@ h1 {
   height: 100%;
   overflow: hidden;
 }
+
+.image-container::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 20%; /* Adjust height as needed */
+  background: linear-gradient(
+    to top,
+    rgba(112, 112, 112, 0) 0%,
+    rgba(8, 12, 30, 0.9) 100%
+  );
+}
+
 .image-container::after {
   content: "";
   position: absolute;
   bottom: 0;
   left: 0;
   width: 100%;
-  height: 30%; /* Adjust height as needed */
-  background-image: linear-gradient(
+  height: 50%; /* Adjust height as needed */
+  background: linear-gradient(
     to bottom,
-    rgba(20, 20, 20, 0),
-    rgba(8, 12, 30, 0.9)
+    rgba(112, 112, 112, 0) 0%,
+    rgba(8, 12, 30, 0.9) 100%
   );
 }
+
+
 
 .image {
   width: 100%;
