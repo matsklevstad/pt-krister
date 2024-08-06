@@ -25,7 +25,7 @@ export default {
   name: "StartPage",
   // Your component's JavaScript logic goes here
   mounted() {
-    AOS.init({ once: true });
+    AOS.init();
   },
   methods: {
     scrollToNextSection() {
