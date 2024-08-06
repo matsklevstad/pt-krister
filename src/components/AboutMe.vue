@@ -80,11 +80,13 @@ export default {
 .header p {
   margin: 0px;
 }
+.image-container {
+  width: 70%;
+}
 
 img {
-  width: 600px;
-  height: 600px;
-  max-height: 100%;
+  max-width: 100%;
+  height: auto;
   border-radius: 12px;
 }
 
