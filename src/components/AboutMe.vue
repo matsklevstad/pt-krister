@@ -1,8 +1,12 @@
 <template>
   <div class="container">
     <div class="content">
-      <!-- data-aos="flip-up"> -->
-      <div class="infobox" data-aos="fade-up" data-aos-duration="700">
+      <div
+        class="infobox"
+        data-aos="fade-up"
+        data-aos-duration="700"
+        data-aos-delay="300"
+      >
         <div class="header">
           <p>PERSONLIG TRENER</p>
           <h1>😁 Hei, jeg er Krister!</h1>
@@ -22,7 +26,13 @@
           av din livsstil.
         </p>
       </div>
-      <div class="image-container" data-aos="fade-up" data-aos-duration="700">  
+      <hr data-aos="fade-down" data-aos-duration="1000" data-aos-delay="300" />
+      <div
+        class="image-container"
+        data-aos="fade-up"
+        data-aos-duration="700"
+        data-aos-delay="300"
+      >
         <img src="../assets/krister-saevik.jpg" alt="Pull Down Image" />
       </div>
     </div>
@@ -50,7 +60,6 @@ export default {
   width: 100%;
   height: 100vh;
   flex-direction: column;
-  justify-content: flex-start;
   padding-top: 200px;
   padding-left: 10%;
   padding-right: 20%;
@@ -58,6 +67,7 @@ export default {
 .content {
   display: flex;
   flex-direction: row;
+
   gap: 50px;
 }
 
@@ -67,13 +77,15 @@ export default {
   font-weight: lighter;
 }
 
+.header p {
+  margin: 0px;
+}
+
 img {
-  width: 300%;
-  max-width: 600px;
-  height: 100%;
-  max-height: 600px;
-  object-fit: cover;
-  border-radius: 50%; /* Make the image round */
+  width: 600px;
+  height: 600px;
+  max-height: 100%;
+  border-radius: 12px;
 }
 
 h1 {
@@ -108,9 +120,13 @@ a {
     padding-right: 5%;
     width: 90%;
   }
+  hr {
+    visibility: hidden;
+  }
+
   img {
-    width: 150px;
-    height: 150px;
+    width: 200px;
+    height: 200px;
     border-radius: 50%;
   }
 
