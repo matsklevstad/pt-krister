@@ -67,12 +67,11 @@ export default {
 .content {
   display: flex;
   flex-direction: row;
-
   gap: 50px;
 }
 
 .infobox {
-  width: 50%;
+  width: 70%;
   text-align: left;
   font-weight: lighter;
 }
