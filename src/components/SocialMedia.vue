@@ -1,10 +1,10 @@
 <template>
   <div class="container">
-    <div class="header">
+    <div class="header" data-aos="fade-up">
       <p>SOSIALE MEDIER</p>
       <h1>👉🏻 Instagram</h1>
     </div>
-    <div class="insta-container">
+    <div class="insta-container" data-aos="fade-up" data-aos-delay="500" >
       <iframe
         :src="instagramUrl"
         frameborder=""

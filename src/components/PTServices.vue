@@ -1,6 +1,6 @@
 <template>
   <div class="container">
-    <div class="header">
+    <div class="header" data-aos="fade-up">
       <p>HVA JEG TILBYR</p>
       <h1>📦 Tjenester</h1>
     </div>

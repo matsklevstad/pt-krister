@@ -25,7 +25,7 @@ export default {
   name: "StartPage",
   // Your component's JavaScript logic goes here
   mounted() {
-    AOS.init();
+    AOS.init({ once: true });
   },
   methods: {
     scrollToNextSection() {
@@ -39,8 +39,6 @@ export default {
 .wrapper {
   position: relative;
   display: flex;
-  align-items: center;
-  justify-content: center;
   height: 100vh;
   overflow: hidden;
 }
@@ -51,14 +49,14 @@ h1 {
 }
 
 .text {
-  position: relative;
   z-index: 2;
   color: white;
   text-align: left;
   padding: 20px;
   font-size: 30px;
   font-weight: lighter;
-  background: rgba(0, 0, 0, 0.5);
+  background: rgba(8, 12, 30, 0.6);
+  border-radius: 24px;
   width: 80%;
   margin: auto;
 }
@@ -109,8 +107,6 @@ h1 {
   );
 }
 
-
-
 .image {
   width: 100%;
   height: 100%;
@@ -132,6 +128,9 @@ button:hover {
 
 /* Media Queries */
 @media (max-width: 768px) {
+  .text {
+    margin-top: 75px;
+  }
   h1 {
     font-size: 35px;
   }

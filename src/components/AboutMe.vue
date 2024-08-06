@@ -1,6 +1,6 @@
 <template>
   <div class="container">
-    <div class="content">
+    <div class="content" data-aos="fade-up">
       <!-- data-aos="flip-up"> -->
       <div class="infobox">
         <div class="header">

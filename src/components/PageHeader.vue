@@ -93,7 +93,7 @@ p {
 }
 
 /* Media Queries for smaller screens */
-@media (max-width: 768px) {
+@media (max-width: 1200px) {
   .nav-menu {
     display: auto;
     flex-direction: column;

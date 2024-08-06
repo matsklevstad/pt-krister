@@ -10,9 +10,6 @@
     <link rel="icon" href="<%= BASE_URL %>favicon.ico" />
     <title><%= htmlWebpackPlugin.options.title %></title>
 
-    <!-- Add AOS CSS if necessary -->
-    <link href="path/to/aos.css" rel="stylesheet" />
-
     <!-- Add Intersection Observer Polyfill if needed for older browsers -->
     <script src="https://polyfill.io/v3/polyfill.min.js?features=IntersectionObserver"></script>
     <script
@@ -20,7 +17,7 @@
       crossorigin="anonymous"
     ></script>
   </head>
-  <body style="background-color: #080c1e;">
+  <body style="background-color: #080c1e">
     <noscript>
       <strong
         >We're sorry but <%= htmlWebpackPlugin.options.title %> doesn't work
@@ -33,25 +30,20 @@
 
     <!-- AOS JavaScript -->
     <script>
-      document.addEventListener(
-        "scroll",
-        (event) => {
-          const aosAnimation = document.querySelectorAll("[data-aos]");
-          observer = new IntersectionObserver((entries) => {
-            entries.forEach((entry) => {
-              if (entry.intersectionRatio > 0) {
-                entry.target.classList.add("aos-animate");
-              } else {
-                entry.target.classList.remove("aos-animate");
-              }
-            });
+      document.addEventListener("DOMContentLoaded", (event) => {
+        const aosAnimation = document.querySelectorAll("[data-aos]");
+        const observer = new IntersectionObserver((entries, observer) => {
+          entries.forEach((entry) => {
+            if (entry.isIntersecting) {
+              entry.target.classList.add("aos-animate");
+              observer.unobserve(entry.target); // Stop observing the element after it animates
+            }
           });
-          aosAnimation.forEach((aosObject) => {
-            observer.observe(aosObject);
-          });
-        },
-        { capture: true, passive: true }
-      );
+        });
+        aosAnimation.forEach((aosObject) => {
+          observer.observe(aosObject);
+        });
+      });
     </script>
   </body>
 </html>
