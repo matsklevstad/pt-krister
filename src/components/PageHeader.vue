@@ -11,7 +11,8 @@
       <ul class="nav-items">
         <li @click="navigateTo('about')">OM MEG</li>
         <li @click="navigateTo('services')">TJENESTER</li>
-        <li @click="navigateTo('reviews')">REFERANSER</li>
+        <!--<li @click="navigateTo('reviews')">REFERANSER</li>-->
+        <li @click="navigateTo('social')">SOSIALE MEDIER</li>
         <!-- <li @click="navigateTo('blog')">BLOGG</li>-->
       </ul>
       <button @click="navigateTo('contact')">KONTAKT MEG</button>
@@ -55,7 +56,6 @@ export default {
   align-items: center;
   width: 70%;
   font-size: 25px;
-
 }
 
 .nav-items {
@@ -90,6 +90,7 @@ i {
 
 p {
   font-size: 25px;
+  cursor: pointer;
 }
 
 /* Media Queries for smaller screens */

@@ -59,7 +59,7 @@ export default {
 <style scoped>
 .container {
   width: 100%;
-  height: 90vh;
+  min-height: 90vh;
   flex-direction: column;
   display: flex;
   padding-left: 10%;
@@ -92,7 +92,7 @@ p {
 @media (max-width: 768px) {
   .container {
     padding: 0px;
-    height: 100vh;
+    min-height: 70vh;
   }
 
   .header {

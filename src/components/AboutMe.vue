@@ -58,7 +58,8 @@ export default {
 .container {
   display: flex;
   width: 100%;
-  height: 100vh;
+  min-height: 90vh;
+
   flex-direction: column;
   padding-top: 200px;
   padding-left: 10%;
@@ -66,12 +67,12 @@ export default {
 }
 .content {
   display: flex;
+  justify-content: space-between;
   flex-direction: row;
-  gap: 50px;
 }
 
 .infobox {
-  width: 70%;
+  width: 50%;
   text-align: left;
   font-weight: lighter;
 }
@@ -80,13 +81,18 @@ export default {
   margin: 0px;
 }
 .image-container {
-  width: 70%;
+  width: 40%;
 }
 
 img {
   max-width: 100%;
   height: auto;
   border-radius: 12px;
+}
+
+hr {
+  width: 1px;
+  background-color: #ccc;
 }
 
 h1 {
@@ -108,12 +114,15 @@ a {
   .container {
     margin-top: 0;
     padding: 0;
+    padding-top: 10%;
+    padding-bottom: 10%;
+    overflow: hidden;
+    min-height: 70vh;
   }
   .content {
     display: flex;
     flex-direction: column;
 
-    gap: 0px;
     justify-content: center;
   }
   .infobox {

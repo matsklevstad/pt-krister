@@ -38,7 +38,7 @@ export default {
 .wrapper {
   position: relative;
   display: flex;
-  height: 100vh;
+  min-height: 100vh;
   overflow: hidden;
   padding-left: 10%;
   padding-right: 10%;
@@ -128,6 +128,9 @@ button:hover {
 
 /* Media Queries */
 @media (max-width: 768px) {
+  .wrapper {
+    padding-top: 20%;
+  }
   .text {
     margin-top: 75px;
   }

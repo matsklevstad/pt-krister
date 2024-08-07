@@ -35,7 +35,7 @@ export default {
 <style scoped>
 .container {
   width: 100%;
-  height: 100%;
+  min-height: 90vh;
   flex-direction: column;
   display: flex;
   overflow: hidden;
@@ -67,6 +67,7 @@ iframe {
   .container {
     padding-left: 5%;
     padding-right: 5%;
+    min-height: 70vh;
   }
 
   .header {
