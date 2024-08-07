@@ -47,10 +47,12 @@ export default {
     ContactInformation,
   },
   methods: {
-    scrollToSection(sectionId) {
-      const section = document.getElementById(sectionId);
-      if (section) {
-        section.scrollIntoView({ behavior: "smooth", block: "start" });
+    scrollToSection({ sectionId, headerHeight = 0 }) {
+      const element = document.getElementById(sectionId);
+      if (element) {
+        const rect = element.getBoundingClientRect();
+        const offset = rect.top + window.scrollY - headerHeight;
+        window.scrollTo({ top: offset, behavior: "smooth" });
       }
     },
   },
@@ -58,11 +60,14 @@ export default {
 </script>
 
 <style>
-html,
+html {
+  height: 100%;
+  overflow-x: hidden;
+}
+
 body {
   height: 100%;
   margin: 0;
-  overflow-x: hidden; /* Prevent horizontal scrolling */
 }
 
 #app {

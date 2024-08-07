@@ -1,5 +1,5 @@
 <template>
-  <div class="nav-menu">
+  <div id="sticky-header" class="nav-menu">
     <div class="nav-buttons">
       <p @click="navigateTo('start')">PT KRISTER SÆVIK</p>
       <i @click="showMenu" class="fa fa-bars"></i>
@@ -25,13 +25,21 @@ export default {
   name: "PageHeader",
   data() {
     return {
-      showMobileMenu: false, // Changed to false to start hidden
+      showMobileMenu: false,
+      initialHeaderHeight: 0,
     };
+  },
+  mounted() {
+    this.initialHeaderHeight =
+      document.querySelector(".sticky-header").clientHeight;
   },
   methods: {
     navigateTo(section) {
-      this.$emit("scrollTo", section);
       this.showMobileMenu = false;
+      this.$emit("scrollTo", {
+        sectionId: section,
+        headerHeight: this.initialHeaderHeight,
+      });
     },
     showMenu() {
       this.showMobileMenu = !this.showMobileMenu;

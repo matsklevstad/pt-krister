@@ -71,7 +71,6 @@ h1 {
   font-size: 35px;
 }
 .grid {
-
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 20px;
@@ -93,6 +92,7 @@ p {
   .container {
     padding: 0px;
     min-height: 70vh;
+    padding-bottom: 10%;
   }
 
   .header {

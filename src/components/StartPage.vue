@@ -28,7 +28,9 @@ export default {
   },
   methods: {
     scrollToNextSection() {
-      this.$emit("scrollTo", "about");
+      this.$emit("scrollTo", {
+        sectionId: "about",
+      });
     },
   },
 };
