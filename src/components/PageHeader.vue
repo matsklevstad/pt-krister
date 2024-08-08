@@ -77,21 +77,6 @@ li {
   padding: 0 10px;
 }
 
-button {
-  background-color: #324047;
-  border: none;
-  color: white;
-  padding: 0 50px;
-  height: 50px;
-  font-size: 20px;
-  border-radius: 25px;
-  cursor: pointer;
-}
-
-button:hover {
-  background-color: #046291;
-}
-
 i {
   display: none; /* Hidden by default on larger screens */
 }
@@ -115,7 +100,6 @@ p {
     align-items: center;
     transition: all 0.5s ease-out;
     overflow: hidden;
-    background-color: #080c1e;
   }
 
   .nav-buttons {

@@ -40,14 +40,9 @@
 </template>
 
 <script>
-import AOS from "aos";
-import "aos/dist/aos.css";
-
 export default {
   name: "AboutMe",
-  mounted() {
-    AOS.init();
-  },
+
   methods: {
     // Your component's JavaScript
   },

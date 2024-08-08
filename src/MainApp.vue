@@ -34,6 +34,8 @@ import AboutMe from "./components/AboutMe.vue";
 import PTServices from "./components/PTServices.vue";
 import SocialMedia from "./components/SocialMedia.vue";
 import ContactInformation from "./components/ContactInformation.vue";
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 export default {
   name: "MainApp",
@@ -53,9 +55,12 @@ export default {
         console.log(headerHeight);
         const rect = element.getBoundingClientRect();
         const offset = rect.top + window.scrollY - headerHeight;
-        window.scrollTo({ top: offset, behavior: "smooth" });
+        window.scrollTo({ top: offset, behavior: "smooth", duration: 10000 });
       }
     },
+  },
+  mounted() {
+    AOS.init({ once: true });
   },
 };
 </script>
@@ -73,11 +78,25 @@ body {
 
 #app {
   font-family: Avenir, Helvetica, Arial, sans-serif;
-  color: #efefef;
+  color: #fffdfd;
   background-color: #080c1e;
   display: flex;
   flex-direction: column;
   overflow: hidden; /* Prevent body from scrolling */
+}
+
+button {
+  font-family: Avenir, Helvetica, Arial, sans-serif;
+  background-color: white;
+  border: none;
+  padding: 15px 32px;
+  font-size: 24px;
+  border-radius: 25px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #c2c2c2;
 }
 
 .sticky-header {

@@ -18,8 +18,6 @@
 </template>
 
 <script>
-import AOS from "aos";
-import "aos/dist/aos.css";
 export default {
   name: "StartPage",
   data() {
@@ -28,7 +26,6 @@ export default {
     };
   },
   mounted() {
-    AOS.init();
     this.initialHeaderHeight =
       document.querySelector(".sticky-header").clientHeight;
   },
@@ -120,19 +117,6 @@ h1 {
   width: 100%;
   height: 100%;
   object-fit: cover;
-}
-
-button {
-  background-color: white;
-  border: none;
-  padding: 15px 32px;
-  font-size: 24px;
-  border-radius: 25px;
-  cursor: pointer;
-}
-
-button:hover {
-  background-color: #c2c2c2;
 }
 
 /* Media Queries */

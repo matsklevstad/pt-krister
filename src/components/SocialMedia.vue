@@ -26,14 +26,9 @@
 </template>
 
 <script>
-import AOS from "aos";
-import "aos/dist/aos.css";
-
 export default {
   name: "SocialMedia",
-  mounted() {
-    AOS.init();
-  },
+
   data() {
     return {
       instagramUrl: "https://www.instagram.com/kristersaevik/embed/",
