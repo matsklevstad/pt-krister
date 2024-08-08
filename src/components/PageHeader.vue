@@ -1,5 +1,5 @@
 <template>
-  <div id="sticky-header" class="nav-menu">
+  <div id="sticky-header" class="nav-menu" ref="navMenu">
     <div class="nav-buttons">
       <p @click="navigateTo('start')">PT KRISTER SÆVIK</p>
       <i @click="showMenu" class="fa fa-bars"></i>
@@ -32,6 +32,10 @@ export default {
   mounted() {
     this.initialHeaderHeight =
       document.querySelector(".sticky-header").clientHeight;
+    document.addEventListener("mousedown", this.handleClickOutside);
+  },
+  beforeUnmount() {
+    document.removeEventListener("mousedown", this.handleClickOutside);
   },
   methods: {
     navigateTo(section) {
@@ -43,6 +47,15 @@ export default {
     },
     showMenu() {
       this.showMobileMenu = !this.showMobileMenu;
+    },
+    handleClickOutside(event) {
+      if (
+        this.showMobileMenu &&
+        this.$refs.navMenu &&
+        !this.$refs.navMenu.contains(event.target)
+      ) {
+        this.showMobileMenu = false;
+      }
     },
   },
 };
