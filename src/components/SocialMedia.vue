@@ -1,10 +1,20 @@
 <template>
   <div class="container">
-    <div class="header" data-aos="fade-up">
+    <div
+      class="header"
+      data-aos="fade-up"
+      data-aos-duration="700"
+      data-aos-delay="300"
+    >
       <p>SOSIALE MEDIER</p>
       <h1>👉🏻 Følg meg på Instagram</h1>
     </div>
-    <div class="insta-container">
+    <div
+      class="insta-container"
+      data-aos="fade-up"
+      data-aos-duration="700"
+      data-aos-delay="700"
+    >
       <iframe
         :src="instagramUrl"
         frameborder=""

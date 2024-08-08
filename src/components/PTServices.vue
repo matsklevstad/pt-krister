@@ -1,12 +1,17 @@
 <template>
   <div class="container">
-    <div class="header" data-aos="fade-up">
+    <div class="header" data-aos="fade-up" data-aos-delay="300">
       <p>HVA JEG TILBYR</p>
       <h1>📦 Tjenestene mine</h1>
     </div>
     <div class="boxes">
       <div class="grid">
-        <div class="grid-item" data-aos="flip-down" data-aos-delay="100">
+        <div
+          class="grid-item"
+          data-aos="flip-down"
+          data-aos-duration="600"
+          data-aos-delay="600"
+        >
           <!--400 per grid-->
           <h1>🥦 Kosthold</h1>
           <p>
@@ -15,7 +20,12 @@
             helsefordeler.
           </p>
         </div>
-        <div class="grid-item" data-aos="flip-down" data-aos-delay="200">
+        <div
+          class="grid-item"
+          data-aos="flip-down"
+          data-aos-duration="600"
+          data-aos-delay="700"
+        >
           <h1>🏋🏻‍♀️ Trening</h1>
           <p>
             Jeg utarbeider skreddersydde treningsprogrammer tilpasset dine
@@ -23,7 +33,12 @@
             effektivitet, progresjon og motivasjon.
           </p>
         </div>
-        <div class="grid-item" data-aos="flip-down" data-aos-delay="300">
+        <div
+          class="grid-item"
+          data-aos="flip-down"
+          data-aos-duration="600"
+          data-aos-delay="800"
+        >
           <h1>💬 Veiledning</h1>
           <p>
             Jeg tilbyr personlig veiledning og støtte gjennom hele din helse- og
@@ -31,7 +46,12 @@
             for dine individuelle mål.
           </p>
         </div>
-        <div class="grid-item" data-aos="flip-down" data-aos-delay="400">
+        <div
+          class="grid-item"
+          data-aos="flip-down"
+          data-aos-duration="600"
+          data-aos-delay="900"
+        >
           <h1>📊 Oppfølging</h1>
           <p>
             Jeg følger nøye opp din fremgang og tilpasser planene etter dine

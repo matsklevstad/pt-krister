@@ -47,9 +47,10 @@ export default {
     ContactInformation,
   },
   methods: {
-    scrollToSection({ sectionId, headerHeight = 0 }) {
+    scrollToSection({ sectionId, headerHeight }) {
       const element = document.getElementById(sectionId);
       if (element) {
+        console.log(headerHeight);
         const rect = element.getBoundingClientRect();
         const offset = rect.top + window.scrollY - headerHeight;
         window.scrollTo({ top: offset, behavior: "smooth" });

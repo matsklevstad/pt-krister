@@ -22,14 +22,21 @@ import AOS from "aos";
 import "aos/dist/aos.css";
 export default {
   name: "StartPage",
-  // Your component's JavaScript logic goes here
+  data() {
+    return {
+      initialHeaderHeight: 0,
+    };
+  },
   mounted() {
     AOS.init();
+    this.initialHeaderHeight =
+      document.querySelector(".sticky-header").clientHeight;
   },
   methods: {
     scrollToNextSection() {
       this.$emit("scrollTo", {
         sectionId: "about",
+        headerHeight: this.initialHeaderHeight,
       });
     },
   },
