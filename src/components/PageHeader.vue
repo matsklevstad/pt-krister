@@ -98,7 +98,8 @@ p {
     display: flex;
     flex-direction: column;
     align-items: center;
-    transition: all 0.5s ease-out;
+    transition: opacity 0.5s linear, visibility 0.5s linear, height 0.5s linear;
+
     overflow: hidden;
   }
 
@@ -115,7 +116,13 @@ p {
     visibility: visible;
     height: auto; /* Allow content height */
     margin-bottom: 20px;
+    width: 100%;
   }
+
+  button {
+    width: 100%;
+  }
+
   /*@TODO: Closed menu takes up space after it is closed/*/
   .closed-menu {
     opacity: 0;
