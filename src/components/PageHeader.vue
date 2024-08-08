@@ -105,6 +105,7 @@ p {
     display: auto;
     flex-direction: column;
     align-items: center;
+    box-shadow: 0 4px 10px rgba(8, 12, 40, 0.75); /* Nice shadow */
   }
 
   .nav-content {
@@ -112,7 +113,6 @@ p {
     flex-direction: column;
     align-items: center;
     transition: opacity 0.5s linear, visibility 0.5s linear, height 0.5s linear;
-
     overflow: hidden;
   }
 
