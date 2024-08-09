@@ -105,6 +105,7 @@ p {
 @media (max-width: 768px) {
   .container {
     padding: 0px;
+    padding-top: 5%;
     min-height: 70vh;
     padding-bottom: 10%;
   }

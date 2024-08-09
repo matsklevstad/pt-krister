@@ -99,8 +99,22 @@ p {
   cursor: pointer;
 }
 
+@media (min-width: 950px) and (max-width: 1500px) {
+  button {
+    font-size: 15px;
+    padding: 10px 20px;
+  }
+
+  li {
+    font-size: 15px;
+  }
+  .nav-items {
+    gap: 5px;
+  }
+}
+
 /* Media Queries for smaller screens */
-@media (max-width: 1200px) {
+@media (max-width: 950px) {
   .nav-menu {
     display: auto;
     flex-direction: column;
@@ -135,8 +149,6 @@ p {
   button {
     width: 100%;
   }
-
-  /*@TODO: Closed menu takes up space after it is closed/*/
   .closed-menu {
     opacity: 0;
     visibility: hidden;

@@ -107,8 +107,8 @@ a {
 
 @media (max-width: 768px) {
   .container {
-    margin-top: 0;
     padding: 0;
+    padding-top: 5%;
     padding-bottom: 10%;
     overflow: hidden;
     min-height: 70vh;

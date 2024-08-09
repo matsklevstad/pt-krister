@@ -72,12 +72,11 @@ iframe {
   .container {
     padding-left: 5%;
     padding-right: 5%;
+    padding-top: 5%;
+    background-color: red;
     min-height: 70vh;
   }
 
-  .header {
-    margin-top: 10px;
-  }
   p {
     font-size: 20px;
   }
