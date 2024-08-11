@@ -14,6 +14,9 @@
         <PTServices />
       </section>
       <section class="page-section" id="social">
+        <FAQAccordion />
+      </section>
+      <section class="page-section" id="social">
         <SocialMedia />
       </section>
       <!--  <section class="page-section" id="reviews">
@@ -36,6 +39,7 @@ import SocialMedia from "./components/SocialMedia.vue";
 import ContactInformation from "./components/ContactInformation.vue";
 import AOS from "aos";
 import "aos/dist/aos.css";
+import FAQAccordion from "./components/FAQAccordion.vue";
 
 export default {
   name: "MainApp",
@@ -45,6 +49,7 @@ export default {
     AboutMe,
     PTServices,
     //CustomerReviews,
+    FAQAccordion,
     SocialMedia,
     ContactInformation,
   },
