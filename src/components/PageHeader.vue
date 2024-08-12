@@ -11,7 +11,7 @@
       <ul class="nav-items">
         <li @click="navigateTo('about')">OM MEG</li>
         <li @click="navigateTo('services')">TJENESTER</li>
-        <!--<li @click="navigateTo('reviews')">REFERANSER</li>-->
+        <li @click="navigateTo('faq')">SPØRSMÅL OG SVAR</li>
         <li @click="navigateTo('social')">SOSIALE MEDIER</li>
         <!-- <li @click="navigateTo('blog')">BLOGG</li>-->
       </ul>
@@ -76,13 +76,15 @@ export default {
   justify-content: space-between;
   align-items: center;
   width: 70%;
-  font-size: 25px;
+
+  flex-wrap: nowrap;
 }
 
 .nav-items {
   display: flex;
   gap: 20px;
   list-style: none;
+  flex-wrap: nowrap;
 }
 
 li {
@@ -95,7 +97,6 @@ i {
 }
 
 p {
-  font-size: 25px;
   cursor: pointer;
 }
 

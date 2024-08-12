@@ -13,7 +13,7 @@
       <section class="page-section" id="services">
         <PTServices />
       </section>
-      <section class="page-section" id="social">
+      <section class="page-section" id="faq">
         <FAQAccordion />
       </section>
       <section class="page-section" id="social">

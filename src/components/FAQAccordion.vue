@@ -10,7 +10,7 @@
         :key="index"
         class="faq-item"
         data-aos-duration="600"
-        :data-aos-delay="600 + index * 100"
+        :data-aos-delay="600 + index * 50"
         data-aos="fade-up"
       >
         <div class="faq-question" @click="toggleItem(index)">
@@ -74,9 +74,10 @@ export default {
   width: 100%;
   min-height: 90vh;
   flex-direction: column;
-  padding-top: 200px;
+
   padding-left: 10%;
   padding-right: 20%;
+  overflow: hidden;
 }
 
 .faq-accordion {
@@ -88,8 +89,7 @@ export default {
 
 .faq-item {
   margin-bottom: 1rem;
-  border: 1px solid #ddd;
-  border-radius: 4px;
+  border-radius: 8px;
 }
 h1 {
   font-size: 35px;
@@ -104,6 +104,8 @@ h1 {
   color: black;
   cursor: pointer;
   font-size: 25px;
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
 }
 
 .faq-answer {
@@ -112,6 +114,8 @@ h1 {
   border-top: 1px solid #ddd;
   color: black;
   font-size: 20px;
+  border-bottom-left-radius: 8px;
+  border-bottom-right-radius: 8px;
 }
 
 .accordion-enter-active,
@@ -137,6 +141,9 @@ span.open {
     padding-top: 5%;
     min-height: 70vh;
     padding-bottom: 10%;
+  }
+
+  .header {
     padding-left: 5%;
     padding-right: 5%;
   }
@@ -146,6 +153,10 @@ span.open {
   }
   h3 {
     font-size: 20px;
+  }
+
+  .faq-accordion {
+    width: 95%;
   }
 
   .faq-accordion p {
