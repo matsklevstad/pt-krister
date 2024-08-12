@@ -1,8 +1,8 @@
 <template>
-  <div data-aos="fade-up" class="wrapper">
+  <div class="wrapper">
     <div class="overlay"></div>
-    <div class="text">
-      <h1 data-aos="fade-right" data-aos-delay="200">🫵 Vil du komme i form?</h1>
+    <div data-aos="fade-up" class="text">
+      <h1 data-aos="fade-right" data-aos-delay="200">🫵 VIL DU KOMME I FORM?</h1>
       <p data-aos="fade-left" data-aos-delay="400">
         Velkommen til din vei mot bedre helse og velvære! Jeg tilbyr personlig
         oppfølging og treningsprogrammer for å hjelpe deg med å nå dine mål.
@@ -122,17 +122,14 @@ h1 {
 /* Media Queries */
 @media (max-width: 768px) {
   .wrapper {
-    padding-top: 20%;
+    padding-top: 10%;
   }
   .text {
     margin-top: 75px;
+    font-size: 20px;
   }
   h1 {
     font-size: 35px;
-  }
-
-  .text {
-    font-size: 20px;
   }
 
   button {

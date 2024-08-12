@@ -63,7 +63,7 @@ export default {
 
 <style scoped>
 .nav-menu {
-  background-color: #080c1e;
+  background-color: var(--primary-background-color);
   padding-left: 10%;
   padding-right: 10%;
   display: flex;
@@ -76,7 +76,6 @@ export default {
   justify-content: space-between;
   align-items: center;
   width: 70%;
-
   flex-wrap: nowrap;
 }
 
@@ -92,12 +91,22 @@ li {
   padding: 0 10px;
 }
 
+li:hover {
+  text-decoration: underline;
+}
+
 i {
   display: none; /* Hidden by default on larger screens */
 }
 
 p {
   cursor: pointer;
+  font-size: 25px;
+}
+
+button {
+  font-size: 20px;
+  padding: 10px 20px;
 }
 
 @media (min-width: 950px) and (max-width: 1500px) {
@@ -120,7 +129,7 @@ p {
     display: auto;
     flex-direction: column;
     align-items: center;
-    box-shadow: 0 4px 10px rgba(8, 12, 40, 0.75); /* Nice shadow */
+    box-shadow: 0 4px 10px var(--primary-background-color-opacity); /* Nice shadow */
   }
 
   .nav-content {

@@ -4,7 +4,7 @@
       <p>SPØRSMÅL OG SVAR</p>
       <h1>💬 Ofte stilte spørsmål</h1>
     </div>
-    <div class="faq-accordion">
+    <div class="faq-accordion-container">
       <div
         v-for="(item, index) in questionList"
         :key="index"
@@ -74,25 +74,27 @@ export default {
   width: 100%;
   min-height: 90vh;
   flex-direction: column;
-
   padding-left: 10%;
   padding-right: 20%;
   overflow: hidden;
 }
 
-.faq-accordion {
+.faq-accordion-container {
   display: flex;
   flex-direction: column;
+  gap: 20px;
   margin: 0 auto;
   width: 100%;
 }
 
 .faq-item {
-  margin-bottom: 1rem;
   border-radius: 8px;
 }
+.header p {
+  font-size: var(--header-p-large-device);
+}
 h1 {
-  font-size: 35px;
+  font-size: var(--header-h1-large-device);
 }
 
 .faq-question {
@@ -125,14 +127,7 @@ h1 {
 
 .accordion-enter,
 .accordion-leave-to {
-  opacity: 0;
-  height: 0;
-  padding: 0 1rem;
-  margin: 0;
-}
-
-span.open {
-  font-weight: bold;
+  display: none;
 }
 
 @media (max-width: 768px) {
@@ -147,19 +142,23 @@ span.open {
     padding-left: 5%;
     padding-right: 5%;
   }
-
-  h1 {
-    font-size: 30px;
+  .header p {
+    font-size: var(--header-p-small-device);
   }
+  h1 {
+    font-size: var(--header-h1-small-device);
+  }
+
   h3 {
     font-size: 20px;
   }
 
-  .faq-accordion {
+  .faq-accordion-container {
     width: 95%;
+    gap: 10px;
   }
 
-  .faq-accordion p {
+  .faq-accordion-container p {
     font-size: 15px;
   }
 }

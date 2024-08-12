@@ -39,6 +39,7 @@ import SocialMedia from "./components/SocialMedia.vue";
 import ContactInformation from "./components/ContactInformation.vue";
 import AOS from "aos";
 import "aos/dist/aos.css";
+import "./styles/globals.css";
 import FAQAccordion from "./components/FAQAccordion.vue";
 
 export default {
@@ -84,15 +85,16 @@ body {
 #app {
   font-family: Avenir, Helvetica, Arial, sans-serif;
   color: #fffdfd;
-  background-color: #080c1e;
+  background-color: var(--primary-background-color);
   display: flex;
   flex-direction: column;
   overflow: hidden; /* Prevent body from scrolling */
 }
 
 button {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  background-color: white;
+  font-family: Avenir, Helvetica Arial, sans-serif;
+  background-color: var(--button-color);
+  color: white;
   border: none;
   padding: 15px 32px;
   font-size: 24px;
@@ -101,35 +103,33 @@ button {
 }
 
 button:hover {
-  background-color: #c2c2c2;
+  background-color: var(--button-color-hover);
 }
 
 .sticky-header {
   position: fixed;
   top: 0;
   width: 100%;
-  z-index: 1000; /* Ensures the header stays above other content */
-  background-color: #080c1e; /* Ensures the header has a background */
+  z-index: 1000;
 }
 
 .full-page-container {
   flex: 1;
-  width: 100vw; /* Ensure container width is 100% of viewport width */
-  overflow-x: hidden; /* Prevent horizontal scrolling */
-  overflow-y: auto; /* Allow vertical scrolling */
+  width: 100vw;
+  overflow-x: hidden;
+  overflow-y: auto;
 }
 
 .page-section {
-  width: 100vw; /* Ensure section width is 100% of viewport width */
+  width: 100vw;
   scroll-snap-align: start;
   display: flex;
   justify-content: center;
   align-items: center;
-  box-sizing: border-box; /* Include padding and border in element's total width and height */
-  overflow-y: auto; /* Allow vertical scrolling within sections if content overflows */
+  box-sizing: border-box;
+  overflow-y: auto;
 }
 
-/* Optional: Add padding or margin to create spacing inside sections */
 .page-section-content {
   padding: 20px;
   width: 100%;

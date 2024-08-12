@@ -37,7 +37,7 @@
 }
 
 .text-container {
-  background: linear-gradient(to bottom, rgb(21, 27, 41) 0%, #080c1e 100%);
+  background: linear-gradient(to bottom, rgb(21, 27, 41) 0%,  var(--primary-background-color) 100%);
   padding-left: 10%;
   margin-bottom: 200px;
   padding-right: 20%;

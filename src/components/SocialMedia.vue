@@ -49,11 +49,11 @@ export default {
 }
 
 h1 {
-  font-size: 40px;
+  font-size: var(--header-h1-large-device);
 }
 
 p {
-  font-size: 20px;
+  font-size: var(--header-p-large-device);
 }
 
 .insta-container {
@@ -62,7 +62,6 @@ p {
 
 iframe {
   width: 100%;
-  background-color: #324047;
   border: 1px solid white;
   height: 1028px;
   border-radius: 8px;
@@ -77,11 +76,11 @@ iframe {
   }
 
   p {
-    font-size: 20px;
+    font-size: var(--header-p-small-device);
   }
 
   h1 {
-    font-size: 30px;
+    font-size: var(--header-h1-small-device);
   }
 
   iframe {

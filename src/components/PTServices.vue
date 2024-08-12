@@ -82,7 +82,7 @@ export default {
 }
 
 h1 {
-  font-size: 35px;
+  font-size: var(--header-h1-large-device);
 }
 .grid {
   display: grid;
@@ -99,7 +99,7 @@ h1 {
 }
 
 p {
-  font-size: 20px;
+  font-size: var(--header-p-large-device);
 }
 
 @media (max-width: 768px) {
@@ -130,11 +130,11 @@ p {
     margin: 0;
   }
   h1 {
-    font-size: 30px;
+    font-size: var(--header-h1-small-device);
   }
 
   .header p {
-    font-size: 20px;
+    font-size: var(--header-p-small-device);
   }
 
   p {

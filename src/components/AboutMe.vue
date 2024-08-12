@@ -54,7 +54,6 @@ export default {
   display: flex;
   width: 100%;
   min-height: 90vh;
-
   flex-direction: column;
   padding-top: 200px;
   padding-left: 10%;
@@ -69,12 +68,8 @@ export default {
 .infobox {
   width: 50%;
   text-align: left;
-  font-weight: lighter;
 }
 
-.header p {
-  margin: 0px;
-}
 .image-container {
   width: 40%;
 }
@@ -92,17 +87,14 @@ hr {
 
 h1 {
   font-size: 50px;
-  font-weight: bold;
+}
+
+.header p {
+  font-size: var(--header-p-large-device);
 }
 
 p {
   font-size: 20px;
-  font-weight: lighter;
-}
-
-a {
-  margin-left: 4px;
-  color: white;
 }
 
 @media (max-width: 768px) {
@@ -146,11 +138,11 @@ a {
     font-size: 15px;
   }
   .header p {
-    font-size: 20px;
+    font-size: var(--header-p-small-device);
   }
 
   h1 {
-    font-size: 30px;
+    font-size: var(--header-h1-small-device);
   }
 }
 </style>

@@ -53,7 +53,7 @@ export default {
 .container {
   align-self: start;
   height: 100%;
-  background-color: #080c1e;
+  background-color:  var(--primary-background-color);
   margin-top: 100px;
   padding-left: 10%;
   overflow: hidden;
@@ -78,7 +78,7 @@ p {
 
 .review-container {
   background-color: white;
-  color: #000000;
+  color: black;
   padding: 20px;
   border-radius: 18px;
   text-align: center;
