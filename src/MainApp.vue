@@ -93,7 +93,7 @@ body {
 
 button {
   font-family: Avenir, Helvetica Arial, sans-serif;
-  background-color: var(--button-color);
+  background-color: var(--secondary-background-color);
   color: white;
   border: none;
   padding: 15px 32px;
@@ -103,11 +103,12 @@ button {
 }
 
 button:hover {
-  background-color: var(--button-color-hover);
+  background-color: var(--secondary-background-color-hover);
 }
 
 .sticky-header {
   position: fixed;
+  box-shadow: 0 4px 8px var(--primary-background-color-opacity); /* Horizontal offset, Vertical offset, Blur radius, Color */
   top: 0;
   width: 100%;
   z-index: 1000;

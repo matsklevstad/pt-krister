@@ -62,7 +62,7 @@ h1 {
   padding: 20px;
   font-size: 30px;
   font-weight: lighter;
-  background: rgba(8, 12, 30, 0.6);
+  background: var(--primary-background-color-opacity);
   border-radius: 24px;
   margin: auto;
 }
@@ -98,7 +98,6 @@ h1 {
     rgba(8, 12, 30, 0.9) 100%
   );
 }
-
 .image-container::after {
   content: "";
   position: absolute;
@@ -123,7 +122,10 @@ h1 {
 @media (max-width: 768px) {
   .wrapper {
     padding-top: 10%;
+    padding-left: 5%;
+    padding-right: 5%;
   }
+
   .text {
     margin-top: 75px;
     font-size: 20px;
@@ -133,7 +135,8 @@ h1 {
   }
 
   button {
-    font-size: 16px;
+    margin: auto;
+    display: block;
   }
 }
 </style>

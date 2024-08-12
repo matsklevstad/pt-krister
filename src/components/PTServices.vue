@@ -91,11 +91,11 @@ h1 {
 }
 
 .grid-item {
-  border: 1px solid #ccc;
   padding: 30px;
   border-radius: 8px;
-  background-color: #f9f9f9;
-  color: black;
+  background-color: var(--secondary-background-color);
+  color: white;
+
 }
 
 p {

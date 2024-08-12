@@ -20,8 +20,13 @@
             <i v-else class="fa-solid fa-plus"></i>
           </span>
         </div>
-        <transition name="accordion">
-          <div v-if="activeIndex === index" class="faq-answer">
+        <transition
+          name="accordion"
+          @before-enter="beforeEnter"
+          @enter="enter"
+          @leave="leave"
+        >
+          <div v-show="activeIndex === index" class="faq-answer">
             <p>{{ item.answer }}</p>
           </div>
         </transition>
@@ -45,7 +50,7 @@ export default {
         {
           question: "Tilbyr du online coaching?",
           answer:
-            "😁 Ja, jeg tilbyr online coaching hvor vi jobber sammen via video eller telefon. Jeg gir deg skreddersydde treningsplaner og følger opp din progresjon. ",
+            "😁 Ja, jeg tilbyr online coaching hvor vi jobber sammen via video eller telefon. Jeg gir deg skreddersydde treningsplaner og følger opp din progresjon.",
         },
         {
           question: "Trenger jeg treningsutstyr for å starte?",
@@ -63,6 +68,21 @@ export default {
   methods: {
     toggleItem(index) {
       this.activeIndex = this.activeIndex === index ? null : index;
+    },
+    beforeEnter(el) {
+      el.style.maxHeight = "0";
+      el.style.padding = "0 1rem";
+    },
+    enter(el) {
+      el.offsetHeight;
+      el.style.transition = "max-height 0.3s ease-out, padding 0.3s ease-out";
+      el.style.maxHeight = el.scrollHeight + "px";
+      el.style.padding = "1rem";
+    },
+    leave(el) {
+      el.style.transition = "max-height 0.3s ease-out, padding 0.3s ease-out";
+      el.style.maxHeight = "0";
+      el.style.padding = "0 1rem";
     },
   },
 };
@@ -90,9 +110,11 @@ export default {
 .faq-item {
   border-radius: 8px;
 }
+
 .header p {
   font-size: var(--header-p-large-device);
 }
+
 h1 {
   font-size: var(--header-h1-large-device);
 }
@@ -102,8 +124,7 @@ h1 {
   justify-content: space-between;
   align-items: center;
   padding: 1rem;
-  background-color: #f7f7f7;
-  color: black;
+  background-color: var(--secondary-background-color);
   cursor: pointer;
   font-size: 25px;
   border-top-left-radius: 8px;
@@ -112,22 +133,12 @@ h1 {
 
 .faq-answer {
   padding: 1rem;
-  background-color: #fff;
-  border-top: 1px solid #ddd;
+  background-color: #f9f9f9;
   color: black;
   font-size: 20px;
   border-bottom-left-radius: 8px;
   border-bottom-right-radius: 8px;
-}
-
-.accordion-enter-active,
-.accordion-leave-active {
-  transition: all 0.3s ease;
-}
-
-.accordion-enter,
-.accordion-leave-to {
-  display: none;
+  overflow: hidden;
 }
 
 @media (max-width: 768px) {
@@ -142,15 +153,21 @@ h1 {
     padding-left: 5%;
     padding-right: 5%;
   }
+
   .header p {
     font-size: var(--header-p-small-device);
   }
+
   h1 {
     font-size: var(--header-h1-small-device);
   }
 
   h3 {
     font-size: 20px;
+  }
+
+  .faq-question {
+    padding: 10px;
   }
 
   .faq-accordion-container {
@@ -160,6 +177,7 @@ h1 {
 
   .faq-accordion-container p {
     font-size: 15px;
+    margin: 0;
   }
 }
 </style>

@@ -1,8 +1,12 @@
 :root {
     --primary-background-color: rgb(8, 12, 30);
     --primary-background-color-opacity: rgba(8, 12, 30, 0.6);
-    --button-color: #452c4a;
-    --button-color-hover: #301e34;
+
+
+
+    --secondary-background-color: rgb(29, 37, 50);
+    --secondary-background-color-hover: rgb(15, 19, 26);
+
 
 
     --header-h1-large-device: 35px;
