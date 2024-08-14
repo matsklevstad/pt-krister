@@ -92,16 +92,12 @@ const form = reactive({
 });
 
 const sendEmail = () => {
-  const timestamp = new Date();
   const mailgun = new Mailgun(FormData);
-  console.log(
-    timestamp.toLocaleDateString() + " " + timestamp.toLocaleTimeString()
-  );
   const mg = mailgun.client({
     username: "api",
     key: process.env.VUE_APP_MAILGUN_API_KEY,
   });
-
+  const timestamp = new Date();
   const emailData = {
     from: `${form.name} <${"mailgun@" + process.env.VUE_APP_MAILGUN_DOMAIN}>`,
     to: ["matsi99@live.com"],
@@ -237,7 +233,9 @@ textarea {
     width: 100%;
   }
 
-  label, input, textarea {
+  label,
+  input,
+  textarea {
     font-size: 15px;
   }
 
