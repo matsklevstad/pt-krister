@@ -77,7 +77,7 @@ export default {
 img {
   max-width: 100%;
   height: auto;
-  border-radius: 12px;
+  border-radius: 8px;
 }
 
 hr {

@@ -58,10 +58,9 @@ export default {
     scrollToSection({ sectionId, headerHeight }) {
       const element = document.getElementById(sectionId);
       if (element) {
-        console.log(headerHeight);
         const rect = element.getBoundingClientRect();
         const offset = rect.top + window.scrollY - headerHeight;
-        window.scrollTo({ top: offset, behavior: "smooth", duration: 10000 });
+        window.scrollTo({ top: offset, behavior: "smooth" });
       }
     },
   },
@@ -98,7 +97,7 @@ button {
   border: none;
   padding: 15px 32px;
   font-size: 24px;
-  border-radius: 25px;
+  border-radius: 24px;
   cursor: pointer;
 }
 

@@ -39,7 +39,7 @@
           data-aos-duration="600"
           data-aos-delay="800"
         >
-          <h1>💬 Veiledning</h1>
+          <h1>🎯 Veiledning</h1>
           <p>
             Jeg tilbyr personlig veiledning og støtte gjennom hele din helse- og
             treningsreise, med en tilnærming som skaper en støttende atmosfære
