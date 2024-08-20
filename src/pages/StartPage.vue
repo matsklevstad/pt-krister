@@ -3,7 +3,7 @@
     <div class="overlay"></div>
     <div data-aos="fade-up" class="text">
       <h1 data-aos="fade-right" data-aos-delay="200">
-        Ønsker du en sterk og veltrent kropp? Sammen når vi dine mål!
+        Ønsker du en sterk og veltrent kropp? La oss nå målene dine sammen!
       </h1>
       <p data-aos="fade-left" data-aos-delay="400">
         Jeg tilbyr nettbasert oppfølging/online coaching og fysiske PT-timer til
@@ -11,7 +11,7 @@
         høres ut som noe for deg, ta kontakt via spørreskjema under, så tar vi
         en prat.
       </p>
-      <button @click="scrollToNextSection">🚀 LA OSS STARTE</button>
+      <button @click="scrollToNextSection">🚀 LA OSS STARTE!</button>
     </div>
     <div class="image-container">
       <img class="image" src="../assets/lifting.jpeg" alt="Krister" />

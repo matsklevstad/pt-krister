@@ -37,12 +37,12 @@
             id="name"
             v-model="form.name"
             required
-            placeholder="Mats Klevstad"
+            placeholder="Ola Nordann"
           />
         </div>
         <div class="form-group-two">
           <div class="form-group">
-            <label for="telephone">Hva er telefonnummeret ditt?</label>
+            <label for="telephone">Telefonnummer</label>
             <input
               type="tel"
               id="telephone"

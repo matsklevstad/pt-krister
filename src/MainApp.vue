@@ -31,16 +31,16 @@
 
 <script>
 import PageHeader from "./components/PageHeader.vue";
-import StartPage from "./components/StartPage.vue";
-import AboutMe from "./components/AboutMe.vue";
+import StartPage from "./pages/StartPage.vue";
+import AboutMe from "./pages/AboutMe.vue";
 //import CustomerReviews from "./components/CustomerReviews.vue";
-import PTServices from "./components/PTServices.vue";
-import SocialMedia from "./components/SocialMedia.vue";
-import ContactInformation from "./components/ContactInformation.vue";
+import PTServices from "./pages/PTServices.vue";
+import SocialMedia from "./pages/SocialMedia.vue";
+import ContactInformation from "./pages/ContactInformation.vue";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import "./styles/globals.css";
-import FAQAccordion from "./components/FAQAccordion.vue";
+import FAQAccordion from "./pages/FAQAccordion.vue";
 
 export default {
   name: "MainApp",
