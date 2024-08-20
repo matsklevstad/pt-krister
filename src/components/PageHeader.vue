@@ -50,8 +50,12 @@ export default {
     showMenu() {
       this.showMobileMenu = !this.showMobileMenu;
     },
-    handleClickOutside() {
-      if (this.showMobileMenu) {
+    handleClickOutside(event) {
+      if (
+        this.showMobileMenu &&
+        this.$refs.navMenu &&
+        !this.$refs.navMenu.contains(event.target)
+      ) {
         this.showMobileMenu = false;
       }
     },
