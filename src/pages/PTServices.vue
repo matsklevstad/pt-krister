@@ -12,7 +12,7 @@
           data-aos-duration="600"
           data-aos-delay="600"
         >
-          <h1>💻 ONLINE COACHING</h1>
+          <h1>ONLINE COACHING</h1>
           <p>
             <i class="fa-solid fa-check"></i> Skreddersydd treningsprogram
             <br />
@@ -30,7 +30,7 @@
           data-aos-duration="600"
           data-aos-delay="800"
         >
-          <h1>🏋🏻‍♀️ PT-PAKKER</h1>
+          <h1>PT-PAKKER</h1>
           <p>
             <i class="fa-solid fa-check"></i> Skreddersydd treningsprogram
             <br />

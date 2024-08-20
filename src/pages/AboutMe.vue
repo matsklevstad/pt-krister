@@ -85,7 +85,7 @@ hr {
 }
 
 h1 {
-  font-size: 50px;
+  font-size: var(--header-h1-large-device);
 }
 
 .header p {

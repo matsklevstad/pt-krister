@@ -45,17 +45,17 @@ export default {
         {
           question: "Hva kan jeg forvente av en PT-time?",
           answer:
-            "🙌🏻 En PT-time er tilpasset dine mål og behov. Vi jobber sammen for å utvikle en treningsplan som passer deg, med fokus på riktig teknikk og effektivitet.",
+            "En PT-time er tilpasset dine mål og behov. Vi jobber sammen for å utvikle en treningsplan som passer deg, med fokus på riktig teknikk og effektivitet.",
         },
         {
           question: "Tilbyr du online coaching?",
           answer:
-            "😁 Ja, jeg tilbyr online coaching hvor vi jobber sammen via video eller telefon. Jeg gir deg skreddersydde treningsplaner og følger opp din progresjon.",
+            "Ja, jeg tilbyr online coaching hvor vi jobber sammen via video eller telefon. Jeg gir deg skreddersydde treningsplaner og følger opp din progresjon.",
         },
         {
           question: "Hvordan booker jeg en PT-time?",
           answer:
-            "📞 Du kan enkelt booke en time ved å kontakte meg direkte via e-post eller telefon. Jeg kan også nås ved å benytte kontaktskjemaet i bunn av nettsiden.",
+            "Du kan enkelt booke en time ved å kontakte meg direkte via e-post eller telefon. Jeg kan også nås ved å benytte kontaktskjemaet i bunn av nettsiden.",
         },
       ],
     };
@@ -104,7 +104,6 @@ export default {
 
 .faq-item {
   border-radius: 8px;
-
 }
 
 .header p {
