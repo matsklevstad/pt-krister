@@ -53,14 +53,9 @@ export default {
             "😁 Ja, jeg tilbyr online coaching hvor vi jobber sammen via video eller telefon. Jeg gir deg skreddersydde treningsplaner og følger opp din progresjon.",
         },
         {
-          question: "Trenger jeg treningsutstyr for å starte?",
-          answer:
-            "📈 Det kommer an på målene dine. Vi kan starte med kroppsvektøvelser, men jeg anbefaler å investere i noe grunnleggende utstyr for å få mest ut av treningen.",
-        },
-        {
           question: "Hvordan booker jeg en PT-time?",
           answer:
-            "📞 Du kan enkelt booke en time ved å kontakte meg direkte via e-post eller telefon.",
+            "📞 Du kan enkelt booke en time ved å kontakte meg direkte via e-post eller telefon. Jeg kan også nås ved å benytte kontaktskjemaet i bunn av nettsiden.",
         },
       ],
     };

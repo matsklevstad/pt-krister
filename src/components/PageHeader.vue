@@ -1,7 +1,7 @@
 <template>
   <div id="sticky-header" class="nav-menu" ref="navMenu">
     <div class="nav-buttons">
-      <p @click="navigateTo('start')">PT KRISTER SÆVIK</p>
+      <p @click="navigateTo('start')">COACH | PT KRISTER SÆVIK</p>
       <i @click="showMenu" class="fa fa-bars"></i>
     </div>
     <div
@@ -15,7 +15,7 @@
         <li @click="navigateTo('social')">SOSIALE MEDIER</li>
         <!-- <li @click="navigateTo('blog')">BLOGG</li>-->
       </ul>
-      <button @click="navigateTo('contact')">KONTAKT MEG</button>
+      <button @click="navigateTo('contact-me')">KONTAKT MEG</button>
     </div>
   </div>
 </template>
@@ -170,6 +170,10 @@ button {
     flex-direction: column;
     width: 100%;
     display: flex;
+  }
+
+  .nav-buttons p {
+    font-size: 20px;
   }
 
   i {

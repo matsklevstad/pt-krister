@@ -1,7 +1,7 @@
 <template>
   <div class="container">
     <img style="width: 100%" src="../assets/layered-wave.svg" />
-    <div class="text-container">
+    <div class="text-container" id="contact-me">
       <h1>Kontaktinformasjon</h1>
       <div class="links-container">
         <p>

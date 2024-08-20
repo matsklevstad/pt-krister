@@ -2,14 +2,16 @@
   <div class="wrapper">
     <div class="overlay"></div>
     <div data-aos="fade-up" class="text">
-      <h1 data-aos="fade-right" data-aos-delay="200">🫵 VIL DU KOMME I FORM?</h1>
+      <h1 data-aos="fade-right" data-aos-delay="200">
+        Ønsker du en sterk og veltrent kropp? Sammen når vi dine mål!
+      </h1>
       <p data-aos="fade-left" data-aos-delay="400">
-        Velkommen til din vei mot bedre helse og velvære! Jeg tilbyr personlig
-        oppfølging og treningsprogrammer for å hjelpe deg med å nå dine mål.
-        Uansett om du ønsker å gå ned i vekt, bygge muskler eller bare forbedre
-        din generelle form, er jeg her for å støtte deg på hvert steg av veien.
+        Jeg tilbyr nettbasert oppfølging/online coaching og fysiske PT-timer til
+        deg mellom 25-40 år som ønsker en sterk og veltrent kropp. Hvis dette
+        høres ut som noe for deg, ta kontakt via spørreskjema under, så tar vi
+        en prat.
       </p>
-      <button @click="scrollToNextSection">JEG VIL VITE MER!</button>
+      <button @click="scrollToNextSection">🚀 LA OSS STARTE</button>
     </div>
     <div class="image-container">
       <img class="image" src="../assets/lifting.jpeg" alt="Krister" />
@@ -59,7 +61,7 @@ h1 {
   z-index: 2;
   color: white;
   text-align: left;
-  padding: 20px;
+  padding: 50px;
   font-size: 30px;
   font-weight: lighter;
   background: var(--primary-background-color-opacity);
@@ -127,16 +129,17 @@ h1 {
   }
 
   .text {
-    margin-top: 75px;
     font-size: 20px;
+    padding: 10px;
   }
   h1 {
-    font-size: 35px;
+    font-size: 25px;
   }
 
   button {
     margin: auto;
     display: block;
+    border: 1px solid rgb(49, 49, 49);
   }
 }
 </style>

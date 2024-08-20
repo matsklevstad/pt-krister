@@ -12,25 +12,16 @@
           data-aos-duration="600"
           data-aos-delay="600"
         >
-          <!--400 per grid-->
-          <h1>🥦 Kosthold</h1>
+          <h1>💻 ONLINE COACHING</h1>
           <p>
-            Jeg setter opp skreddersydde kostholdsplaner basert på dine mål og
-            preferanser, med fokus på balanse, næring og langsiktige
-            helsefordeler.
-          </p>
-        </div>
-        <div
-          class="grid-item"
-          data-aos="flip-down"
-          data-aos-duration="600"
-          data-aos-delay="700"
-        >
-          <h1>🏋🏻‍♀️ Trening</h1>
-          <p>
-            Jeg utarbeider skreddersydde treningsprogrammer tilpasset dine
-            fysiske mål og treningsnivå, med en metodikk som fremmer
-            effektivitet, progresjon og motivasjon.
+            <i class="fa-solid fa-check"></i> Skreddersydd treningsprogram
+            <br />
+            <i class="fa-solid fa-check"></i> Ukentlige
+            oppdateringer/justeringer<br />
+            <i class="fa-solid fa-check"></i> Ukentlig check ins <br />
+            <i class="fa-solid fa-check"></i> 24/7 chat med coach <br />
+            <i class="fa-solid fa-check"></i> Kostholdsveiledning <br />
+            <i class="fa-solid fa-check"></i> Teknikkanalyse (via video) <br />
           </p>
         </div>
         <div
@@ -39,24 +30,13 @@
           data-aos-duration="600"
           data-aos-delay="800"
         >
-          <h1>🎯 Veiledning</h1>
+          <h1>🏋🏻‍♀️ PT-PAKKER</h1>
           <p>
-            Jeg tilbyr personlig veiledning og støtte gjennom hele din helse- og
-            treningsreise, med en tilnærming som skaper en støttende atmosfære
-            for dine individuelle mål.
-          </p>
-        </div>
-        <div
-          class="grid-item"
-          data-aos="flip-down"
-          data-aos-duration="600"
-          data-aos-delay="900"
-        >
-          <h1>📊 Oppfølging</h1>
-          <p>
-            Jeg følger nøye opp din fremgang og tilpasser planene etter dine
-            individuelle behov, for å sikre at du oppnår og opprettholder
-            ønskede resultater.
+            <i class="fa-solid fa-check"></i> Skreddersydd treningsprogram
+            <br />
+            <i class="fa-solid fa-check"></i> Fysiske PT-timer <br />
+            <i class="fa-solid fa-check"></i> Teknikkinstruksjon <br />
+            <i class="fa-solid fa-check"></i> Tett oppfølging <br />
           </p>
         </div>
       </div>
@@ -95,7 +75,11 @@ h1 {
   border-radius: 8px;
   background-color: var(--secondary-background-color);
   color: white;
+}
 
+i {
+  margin-top: 20px;
+  margin-right: 5px;
 }
 
 p {
@@ -137,9 +121,12 @@ p {
     font-size: var(--header-p-small-device);
   }
 
+  i {
+    margin-top: 15px;
+  }
+
   p {
     font-size: 15px;
-    margin: 0;
   }
 }
 </style>

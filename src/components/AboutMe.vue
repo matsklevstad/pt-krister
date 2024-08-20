@@ -8,22 +8,25 @@
         data-aos-delay="300"
       >
         <div class="header">
-          <p>PERSONLIG TRENER</p>
+          <p>ONLINE COACH | PERSONLIG TRENER</p>
           <h1>😁 Hei, jeg er Krister!</h1>
         </div>
         <p>
-          Jeg heter Krister Sævik, og jeg er en sertifisert personlig trener med
-          en lidenskap for å hjelpe folk med å oppnå sine helse- og treningsmål.
-          Med over 10 års erfaring i treningsbransjen, har jeg jobbet med et
-          bredt spekter av klienter, fra nybegynnere til eliteutøvere.
+          Mitt navn er Krister Sævik, og jeg er sertifisert personlig
+          trener/coach gjennom et årsstudium i PT og en bachelor i trening ved
+          Nord Universitet. Jeg jobber fulltid som online coach/PT og etter 8 år
+          i treningsbransjen har jeg hjulpet hundrevis av mennesker med å bli
+          sterk og veltrent fra svært ulike utgangspunkt.
           <br /><br />
-          Gjennom årene har jeg oppnådd flere sertifiseringer innen
-          styrketrening, ernæring, og rehabilitering. Jeg er dedikert til å
-          holde meg oppdatert på de nyeste treningsmetodene og forskningen for å
-          sikre at mine klienter får den beste og mest effektive treningen.
+          Jeg hjelper deg å bygge muskelmasse, redusere fettprosent og bli
+          sterkere. Mange overvurderer hva som skal til, og ser en veltrent
+          kropp som noe uoppnåelig. Du trenger ikke å trene 6 dager i uka eller
+          følge en streng kostholdsplan. Hvis du ønsker min hjelp til å bli
+          sterk og veltrent en gang for alle, ikke nøl med å ta kontakt for en
+          uforpliktende prat.
           <br /><br />
-          Sammen kan vi nå dine mål og gjøre trening til en positiv og varig del
-          av din livsstil.
+          Kanskje er du bare en telefonsamtale unna og endre livet ditt. Du har
+          ingenting å tape, alt og vinne. Vi høres!
         </p>
       </div>
       <hr data-aos="fade-down" data-aos-duration="1000" data-aos-delay="300" />
@@ -55,7 +58,7 @@ export default {
   width: 100%;
   min-height: 90vh;
   flex-direction: column;
-  padding-top: 200px;
+  padding-top: 20px;
   padding-left: 10%;
   padding-right: 20%;
 }
