@@ -1,7 +1,7 @@
 <template>
   <div id="sticky-header" class="nav-menu" ref="navMenu">
     <div class="nav-buttons">
-      <p @click="navigateTo('start')">COACH | PT KRISTER SÆVIK</p>
+      <p class="logo" @click="navigateTo('start')">COACH | PT KRISTER SÆVIK</p>
       <i @click="showMenu" class="fa fa-bars"></i>
     </div>
     <div
@@ -11,9 +11,9 @@
       <ul class="nav-items">
         <li @click="navigateTo('about')"><span>😁</span> OM MEG</li>
         <li @click="navigateTo('services')"><span>📦</span> TJENESTER</li>
+        <li @click="navigateTo('reviews')"><span>🏆</span> KUNDEANMELDELSER</li>
         <li @click="navigateTo('faq')"><span>💬</span> SPØRSMÅL OG SVAR</li>
         <li @click="navigateTo('social')"><span>🚀 </span>SOSIALE MEDIER</li>
-        <!-- <li @click="navigateTo('blog')">BLOGG</li>-->
       </ul>
       <button @click="navigateTo('contact-me')">KONTAKT MEG</button>
     </div>
@@ -71,8 +71,8 @@ export default {
 <style scoped>
 .nav-menu {
   background-color: var(--primary-background-color);
-  padding-left: 10%;
-  padding-right: 10%;
+  padding-left: 2.5%;
+  padding-right: 2.5%;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -88,7 +88,8 @@ export default {
 
 .nav-items {
   display: flex;
-  gap: 20px;
+  gap: 5px;
+  font-size: 15px;
   list-style: none;
   flex-wrap: nowrap;
 }
@@ -106,13 +107,13 @@ i {
   display: none; /* Hidden by default on larger screens */
 }
 
-p {
+.logo {
   cursor: pointer;
   font-size: 25px;
 }
 
 button {
-  font-size: 20px;
+  font-size: 15px;
   padding: 10px 20px;
 }
 
@@ -121,16 +122,22 @@ span {
 }
 
 @media (min-width: 950px) and (max-width: 1500px) {
-  button {
-    font-size: 15px;
-    padding: 10px 20px;
+  .nav-content {
+    width: 80%;
   }
 
-  li {
+  .logo {
     font-size: 15px;
   }
+  button {
+    font-size: 12px;
+    padding: 10px 20px;
+  }
+  li {
+    font-size: 12px;
+  }
   .nav-items {
-    gap: 5px;
+    gap: 2px;
   }
 }
 
@@ -169,6 +176,7 @@ span {
 
   button {
     width: 100%;
+    font-size: 15px;
   }
   .closed-menu {
     opacity: 0;
@@ -181,9 +189,11 @@ span {
     flex-direction: column;
     width: 100%;
     display: flex;
+    gap: 15px;
+    font-size: 15px;
   }
 
-  .nav-buttons p {
+  .logo {
     font-size: 20px;
   }
 

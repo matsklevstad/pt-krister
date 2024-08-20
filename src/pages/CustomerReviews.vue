@@ -1,97 +1,97 @@
 <template>
   <div class="container">
-    <h1>Hva synes kundene mine?</h1>
-    <p>
-      Utforsk suksesshistorier og les mer om vellykkede samarbeid med andre
-      kunder.
-    </p>
-    <div class="reviews">
-      <div class="review-container">
-        <h2>⭐️⭐️⭐️⭐️⭐️</h2>
-        <h3>Fantastisk opplevelse</h3>
-        <p>
-          Krister har virkelig overgått mine forventninger som PT. Jeg har sett
-          store forbedringer på kort tid. Han er utrolig kunnskapsrik, og hver
-          økt er nøye planlagt for å maksimere resultatene mine. Jeg føler meg
-          sterkere og mer energisk enn noensinne!
-        </p>
-        <p>Ola Nordmann</p>
-      </div>
-      <div class="review-container">
-        <h2>⭐️⭐️⭐️⭐️⭐️</h2>
-        <h3>Utrolig fornøyd</h3>
-        <p>
-          Med Krister som PT har jeg endelig klart å nå målene mine. Han gir meg
-          akkurat den motivasjonen jeg trenger. Treningene hans er utfordrende,
-          men alltid gjennomførbare, og han vet akkurat hvordan han skal pushe
-          meg til å yte mitt beste. Anbefales på det sterkeste!
-        </p>
-        <p>Kari Hansen</p>
-      </div>
-      <div class="review-container">
-        <h2>⭐️⭐️⭐️⭐️⭐️</h2>
-        <h3>Anbefales på det sterkeste</h3>
-        <p>
-          Krister er en dyktig og motiverende PT. Treningsøktene er både
-          effektive og morsomme. Han tilpasser programmene etter mine behov og
-          sørger for at jeg alltid har riktig teknikk. Resultatene jeg har
-          oppnådd på kort tid er intet mindre enn imponerende.
-        </p>
-        <p>Per Olsen</p>
-      </div>
+    <div class="header" data-aos="fade-up" data-aos-delay="300">
+      <p>HVA SYNES ANDRE?</p>
+      <h1>🏆 Kundeanmeldelser</h1>
     </div>
+    <div data-aos="fade-up" data-aos-delay="500" v-html="widgetHtml"></div>
   </div>
 </template>
 
 <script>
 export default {
-  name: "CustomerReviews",
+  name: "PTServices",
+  data() {
+    return {
+      widgetHtml: "", // This will store the HTML to render the widget
+    };
+  },
+  mounted() {
+    this.loadWidget();
+  },
+  methods: {
+    loadWidget() {
+      // Define your widget configuration or URL
+
+      this.widgetHtml = `<div data-widget-textcarousel="${process.env.VUE_APP_REVIEW_ID}"></div>`;
+
+      // Optionally, add any additional initialization or script execution
+      const script = document.createElement("script");
+      script.src = "https://app.simplyreview.com/widgets/textcarousel/index.js";
+      script.defer = true;
+      document.body.appendChild(script);
+    },
+  },
 };
 </script>
 
 <style scoped>
 .container {
-  align-self: start;
-  height: 100%;
-  background-color:  var(--primary-background-color);
-  margin-top: 100px;
+  width: 100%;
+  min-height: 70vh;
+  flex-direction: column;
+  display: flex;
   padding-left: 10%;
+  padding-right: 20%;
   overflow: hidden;
 }
 
 h1 {
-  font-size: 50px;
-  font-weight: lighter;
+  font-size: var(--header-h1-large-device);
 }
 
 p {
-  font-size: 20px;
-  font-weight: lighter;
+  font-size: var(--header-p-large-device);
 }
 
-.reviews {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 20px;
-  width: 80%;
+/*styles for SimplyReview widget:*/
+/* -------- */
+:deep(.style-module_row__1luKZ) {
+  opacity: 1 !important;
 }
 
-.review-container {
-  background-color: white;
-  color: black;
-  padding: 20px;
-  border-radius: 18px;
-  text-align: center;
+:deep(.style-module_headline__38-gz),
+:deep(.style-module_text__3LokZ) {
+  color: white !important;
 }
 
-.review-container p {
-  font-size: 16px;
-  margin-bottom: 75px;
+:deep(#Layer_1 g path) {
+  fill: white !important;
 }
+/* -------- */
 
-h3 {
-  font-size: 20px;
-  font-weight: bold;
-  margin: 0;
+@media (max-width: 768px) {
+  .container {
+    padding: 0px;
+    padding-top: 5%;
+    min-height: 70vh;
+    padding-bottom: 10%;
+  }
+
+  .header {
+    padding-left: 5%;
+  }
+
+  h1 {
+    font-size: var(--header-h1-small-device);
+  }
+
+  .header p {
+    font-size: var(--header-p-small-device);
+  }
+
+  p {
+    font-size: 15px;
+  }
 }
 </style>

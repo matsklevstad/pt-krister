@@ -13,15 +13,15 @@
       <section class="page-section" id="services">
         <PTServices />
       </section>
+      <section class="page-section" id="reviews">
+        <CustomerReviews />
+      </section>
       <section class="page-section" id="faq">
         <FAQAccordion />
       </section>
       <section class="page-section" id="social">
         <SocialMedia />
       </section>
-      <!--  <section class="page-section" id="reviews">
-        <CustomerReviews />
-      </section> -->
       <section class="page-section" id="contact">
         <ContactInformation />
       </section>
@@ -33,7 +33,7 @@
 import PageHeader from "./components/PageHeader.vue";
 import StartPage from "./pages/StartPage.vue";
 import AboutMe from "./pages/AboutMe.vue";
-//import CustomerReviews from "./components/CustomerReviews.vue";
+import CustomerReviews from "./pages/CustomerReviews.vue";
 import PTServices from "./pages/PTServices.vue";
 import SocialMedia from "./pages/SocialMedia.vue";
 import ContactInformation from "./pages/ContactInformation.vue";
@@ -49,7 +49,7 @@ export default {
     StartPage,
     AboutMe,
     PTServices,
-    //CustomerReviews,
+    CustomerReviews,
     FAQAccordion,
     SocialMedia,
     ContactInformation,
@@ -106,7 +106,6 @@ button:hover {
 button:active {
   background-color: var(--secondary-background-color-active);
 }
-
 
 .sticky-header {
   position: fixed;

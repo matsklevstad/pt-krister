@@ -1,6 +1,6 @@
 import { createApp } from "vue";
 import MainApp from "./MainApp.vue";
-import { inject } from "@vercel/analytics"
+import { inject } from "@vercel/analytics";
 
 const app = createApp(MainApp);
 
@@ -8,6 +8,3 @@ const app = createApp(MainApp);
 app.use(inject);
 
 app.mount("#app");
-
-
-
