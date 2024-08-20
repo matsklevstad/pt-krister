@@ -67,14 +67,15 @@ h1 {
 .grid {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  gap: 20px;
+  gap: 60px;
 }
 
 .grid-item {
   padding: 30px;
   border-radius: 8px;
   background-color: var(--secondary-background-color);
-  color: white;
+  box-shadow: rgba(255, 255, 255, 0.3) 0px 7px 20px 0px;
+  text-align: left;
 }
 
 i {
@@ -103,7 +104,7 @@ p {
     grid-template-columns: 1fr;
     grid-template-rows: repeat(4, auto);
     justify-items: center;
-    gap: 10px;
+    gap: 25px;
   }
   .grid-item {
     padding: 10px;

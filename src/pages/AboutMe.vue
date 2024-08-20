@@ -45,10 +45,6 @@
 <script>
 export default {
   name: "AboutMe",
-
-  methods: {
-    // Your component's JavaScript
-  },
 };
 </script>
 

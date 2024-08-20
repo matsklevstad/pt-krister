@@ -6,15 +6,15 @@
         Ønsker du en sterk og veltrent kropp? La oss nå målene dine sammen!
       </h1>
       <p data-aos="fade-left" data-aos-delay="400">
-        Jeg tilbyr nettbasert oppfølging/online coaching og fysiske PT-timer til
-        deg mellom 25-40 år som ønsker en sterk og veltrent kropp. Hvis dette
-        høres ut som noe for deg, ta kontakt via spørreskjema under, så tar vi
-        en prat.
+        Jeg tilbyr nettbasert coaching og personlige treningstimer til deg
+        mellom 25 og 40 år som ønsker en sterk og veltrent kropp. Hvis dette
+        høres interessant ut, fyll ut kontaktskjemaet nedenfor, så tar vi en
+        prat!
       </p>
-      <button @click="scrollToNextSection">🚀 LA OSS STARTE!</button>
+      <button @click="scrollToNextSection">LA OSS STARTE!</button>
     </div>
     <div class="image-container">
-      <img class="image" src="../assets/lifting.jpeg" alt="Krister" />
+      <img class="image" src="../assets/lifting-2.jpeg" alt="Krister" />
     </div>
   </div>
 </template>
@@ -49,11 +49,11 @@ export default {
   min-height: 100vh;
   overflow: hidden;
   padding-left: 10%;
-  padding-right: 10%;
+  padding-right: 20%;
 }
 
 h1 {
-  font-size: 50px;
+  font-size: 40px;
   margin: 0;
 }
 
@@ -62,8 +62,7 @@ h1 {
   color: white;
   text-align: left;
   padding: 50px;
-  font-size: 30px;
-  font-weight: lighter;
+  font-size: 25px;
   background: var(--primary-background-color-opacity);
   border-radius: 24px;
   margin: auto;
@@ -123,14 +122,13 @@ h1 {
 /* Media Queries */
 @media (max-width: 768px) {
   .wrapper {
-    padding-top: 10%;
     padding-left: 5%;
     padding-right: 5%;
   }
 
   .text {
     font-size: 20px;
-    padding: 10px;
+    padding: 20px;
   }
   h1 {
     font-size: 25px;
@@ -139,7 +137,6 @@ h1 {
   button {
     margin: auto;
     display: block;
-    border: 1px solid rgb(49, 49, 49);
   }
 }
 </style>

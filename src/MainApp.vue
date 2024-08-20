@@ -93,17 +93,20 @@ body {
 button {
   font-family: Avenir, Helvetica Arial, sans-serif;
   background-color: var(--secondary-background-color);
+  border: 1px solid rgb(255, 255, 255, 0.5);
   color: white;
-  border: none;
   padding: 15px 32px;
   font-size: 24px;
   border-radius: 24px;
   cursor: pointer;
 }
-
 button:hover {
   background-color: var(--secondary-background-color-hover);
 }
+button:active {
+  background-color: var(--secondary-background-color-active);
+}
+
 
 .sticky-header {
   position: fixed;

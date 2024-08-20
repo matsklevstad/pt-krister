@@ -97,13 +97,14 @@ export default {
 .faq-accordion-container {
   display: flex;
   flex-direction: column;
-  gap: 20px;
+  gap: 30px;
   margin: 0 auto;
   width: 100%;
 }
 
 .faq-item {
   border-radius: 8px;
+
 }
 
 .header p {
@@ -167,7 +168,7 @@ h1 {
 
   .faq-accordion-container {
     width: 95%;
-    gap: 10px;
+    gap: 20px;
   }
 
   .faq-accordion-container p {

@@ -4,6 +4,7 @@
 
     --secondary-background-color: rgb(29, 37, 50);
     --secondary-background-color-hover: rgb(15, 19, 26);
+    --secondary-background-color-active: rgb(78, 78, 78);
 
     --header-h1-large-device: 35px;
     --header-h1-small-device: 30px;

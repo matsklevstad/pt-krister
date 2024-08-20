@@ -9,10 +9,10 @@
       :class="showMobileMenu ? 'open-menu' : 'closed-menu'"
     >
       <ul class="nav-items">
-        <li @click="navigateTo('about')">OM MEG</li>
-        <li @click="navigateTo('services')">TJENESTER</li>
-        <li @click="navigateTo('faq')">SPØRSMÅL OG SVAR</li>
-        <li @click="navigateTo('social')">SOSIALE MEDIER</li>
+        <li @click="navigateTo('about')"><span>😁</span> OM MEG</li>
+        <li @click="navigateTo('services')"><span>📦</span> TJENESTER</li>
+        <li @click="navigateTo('faq')"><span>💬</span> SPØRSMÅL OG SVAR</li>
+        <li @click="navigateTo('social')"><span>🚀 </span>SOSIALE MEDIER</li>
         <!-- <li @click="navigateTo('blog')">BLOGG</li>-->
       </ul>
       <button @click="navigateTo('contact-me')">KONTAKT MEG</button>
@@ -33,9 +33,11 @@ export default {
     this.initialHeaderHeight =
       document.querySelector(".sticky-header").clientHeight;
     document.addEventListener("mousedown", this.handleClickOutside);
+    window.addEventListener("scroll", this.handleScroll); // Add scroll event listener
   },
   beforeUnmount() {
     document.removeEventListener("mousedown", this.handleClickOutside);
+    window.removeEventListener("scroll", this.handleScroll); // Remove scroll event listener
   },
   methods: {
     navigateTo(section) {
@@ -48,12 +50,13 @@ export default {
     showMenu() {
       this.showMobileMenu = !this.showMobileMenu;
     },
-    handleClickOutside(event) {
-      if (
-        this.showMobileMenu &&
-        this.$refs.navMenu &&
-        !this.$refs.navMenu.contains(event.target)
-      ) {
+    handleClickOutside() {
+      if (this.showMobileMenu) {
+        this.showMobileMenu = false;
+      }
+    },
+    handleScroll() {
+      if (this.showMobileMenu) {
         this.showMobileMenu = false;
       }
     },
@@ -107,6 +110,10 @@ p {
 button {
   font-size: 20px;
   padding: 10px 20px;
+}
+
+span {
+  display: none;
 }
 
 @media (min-width: 950px) and (max-width: 1500px) {
@@ -181,6 +188,10 @@ button {
     font-size: 24px;
     color: white;
     cursor: pointer;
+  }
+
+  span {
+    display: inline;
   }
 }
 </style>
