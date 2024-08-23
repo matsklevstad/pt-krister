@@ -79,6 +79,14 @@ img {
   border-radius: 8px;
 }
 
+.image-container img {
+  transition: transform 0.3s ease;
+}
+
+.image-container:hover img {
+  transform: scale(1.05); /* Adjust the percentage as needed */
+}
+
 hr {
   width: 1px;
   background-color: #ccc;

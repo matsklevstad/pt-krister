@@ -11,7 +11,7 @@
         høres interessant ut, fyll ut kontaktskjemaet nedenfor, så tar vi en
         prat!
       </p>
-      <button @click="scrollToNextSection">LA OSS STARTE!</button>
+      <button @click="scrollToNextSection">JEG VIL VITE MER!</button>
     </div>
     <div class="image-container">
       <img class="image" src="../assets/lifting-2.jpeg" alt="Krister" />
@@ -67,6 +67,10 @@ h1 {
   border-radius: 24px;
   margin: auto;
 }
+button {
+  font-size: 25px;
+}
+
 .overlay {
   position: absolute;
   z-index: 1;
@@ -135,8 +139,7 @@ h1 {
   }
 
   button {
-    margin: auto;
-    display: block;
+    font-size: 20px;
   }
 }
 </style>

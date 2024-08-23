@@ -87,7 +87,7 @@ export default {
 .container {
   display: flex;
   width: 100%;
-  min-height: 90vh;
+  min-height: 80vh;
   flex-direction: column;
   padding-left: 10%;
   padding-right: 20%;
@@ -121,7 +121,7 @@ h1 {
   padding: 1rem;
   background-color: var(--secondary-background-color);
   cursor: pointer;
-  font-size: 25px;
+  font-size: var(--header-p-large-device);
   border-top-left-radius: 8px;
   border-top-right-radius: 8px;
 }

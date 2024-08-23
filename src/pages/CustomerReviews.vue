@@ -38,7 +38,7 @@ export default {
 <style scoped>
 .container {
   width: 100%;
-  min-height: 70vh;
+  min-height: 80vh;
   flex-direction: column;
   display: flex;
   padding-left: 10%;
@@ -58,6 +58,22 @@ p {
 /* -------- */
 :deep(.style-module_row__1luKZ) {
   opacity: 1 !important;
+}
+
+/* Scrollbar? 
+:deep(.simply-carousel) {
+  overflow-x: scroll !important;
+  scrollbar-width: thin !important;
+  scrollbar-color: grey white !important;
+}*/
+
+:deep(.simply-carousel)::-webkit-scrollbar {
+  width: 60px;
+  background-color: white;
+}
+
+:deep(.simply-carousel)::-webkit-scrollbar-thumb {
+  background-color: grey;
 }
 
 :deep(.style-module_headline__38-gz),

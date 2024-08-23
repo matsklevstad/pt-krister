@@ -30,7 +30,7 @@
           data-aos-duration="600"
           data-aos-delay="800"
         >
-          <h1>PT-PAKKER</h1>
+          <h1>PERSONLIG TRENER</h1>
           <p>
             <i class="fa-solid fa-check"></i> Skreddersydd treningsprogram
             <br />
@@ -74,7 +74,7 @@ h1 {
   padding: 30px;
   border-radius: 8px;
   background-color: var(--secondary-background-color);
-  box-shadow: rgba(255, 255, 255, 0.3) 0px 7px 20px 0px;
+  box-shadow: rgba(226, 225, 225, 0.3) 0px 7px 20px 0px;
   text-align: left;
 }
 
@@ -91,7 +91,7 @@ p {
   .container {
     padding: 0px;
     padding-top: 5%;
-    min-height: 70vh;
+    min-height: 80vh;
     padding-bottom: 10%;
   }
 
@@ -112,7 +112,7 @@ p {
   }
   .grid-item h1 {
     font-size: 20px;
-    margin: 0;
+    text-align: center;
   }
   h1 {
     font-size: var(--header-h1-small-device);
@@ -127,7 +127,7 @@ p {
   }
 
   p {
-    font-size: 15px;
+    font-size: var(--header-p-small-device);
   }
 }
 </style>
