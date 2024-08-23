@@ -116,8 +116,22 @@ form {
   justify-content: center;
   background-color: var(--secondary-background-color);
   align-items: center;
-  text-align: left;
+  animation: glow 7s infinite;
 }
+
+@keyframes glow {
+  0% {
+    box-shadow: rgba(255, 255, 255, 0.1) 0px 7px 29px 0px;
+  }
+  50% {
+    box-shadow: rgba(255, 255, 255, 0.5) 0px 0px 29px 10px;
+  }
+  100% {
+    box-shadow: rgba(255, 255, 255, 0.1) 0px 7px 29px 0px;
+  }
+}
+
+/**TOOD: STOP ANIMATION WHEN FORM IS SUBMITTED */
 
 .form-group {
   display: flex;
