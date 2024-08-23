@@ -54,7 +54,7 @@ export default {
   width: 100%;
   min-height: 90vh;
   flex-direction: column;
-  padding-top: 20px;
+  padding-top: 40px;
   padding-left: 10%;
   padding-right: 20%;
 }
@@ -98,6 +98,7 @@ h1 {
 
 .header p {
   font-size: var(--header-p-large-device);
+  margin: 0;
 }
 
 p {
