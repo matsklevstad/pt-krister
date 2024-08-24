@@ -48,14 +48,14 @@ export default {
             "En PT-time er tilpasset dine mål og behov. Vi jobber sammen for å utvikle en treningsplan som passer deg, med fokus på riktig teknikk og effektivitet.",
         },
         {
-          question: "Tilbyr du online coaching?",
-          answer:
-            "Ja, jeg tilbyr online coaching hvor vi jobber sammen via video eller telefon. Jeg gir deg skreddersydde treningsplaner og følger opp din progresjon.",
-        },
-        {
           question: "Hvordan booker jeg en PT-time?",
           answer:
             "Du kan enkelt booke en time ved å kontakte meg direkte via e-post eller telefon. Jeg kan også nås ved å benytte kontaktskjemaet i bunn av nettsiden.",
+        },
+        {
+          question: "Hva er prisen for en PT-time?",
+          answer:
+            "Prisen for en PT-time varierer avhengig av lengden på timen og om du ønsker en pakke med flere timer. Ta kontakt for mer informasjon om priser og tilgjengelighet.",
         },
       ],
     };

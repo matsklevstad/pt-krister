@@ -3,13 +3,15 @@
     <div class="overlay"></div>
     <div data-aos="fade-up" class="text">
       <h1 data-aos="fade-right" data-aos-delay="200">
-        Ønsker du en sterk og veltrent kropp? La oss nå målene dine sammen!
+        Drømmer du om en sterkere og mer veltrent kropp? La oss nå målene dine
+        sammen!
       </h1>
       <p data-aos="fade-left" data-aos-delay="400">
-        Jeg tilbyr nettbasert coaching og personlige treningstimer til deg
-        mellom 25 og 40 år som ønsker en sterk og veltrent kropp. Hvis dette
-        høres interessant ut, fyll ut kontaktskjemaet nedenfor, så tar vi en
-        prat!
+        Jeg tilbyr nettbasert coaching og personlige treningstimer for deg
+        mellom 25 og 40 år som ønsker å bygge en sterk, sunn og veltrent kropp.
+        Er du klar for å ta det neste steget? Fyll ut
+        <a href="#contact-form">kontaktskjemaet</a> nedenfor, så tar vi en
+        uforpliktende prat om hvordan jeg kan hjelpe deg å nå dine mål!
       </p>
       <button @click="scrollToNextSection">JEG VIL VITE MER!</button>
     </div>
@@ -55,6 +57,10 @@ export default {
 h1 {
   font-size: 40px;
   margin: 0;
+}
+
+a {
+  color: var(--primary-color);
 }
 
 .text {

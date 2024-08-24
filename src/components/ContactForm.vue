@@ -1,6 +1,6 @@
 <template>
   <form @submit.prevent="sendEmail">
-    <h2>✉️ Send meg en uforpliktende forespørsel!</h2>
+    <h2 id="contact-form">✉️ Send meg en uforpliktende forespørsel!</h2>
     <div class="form-group">
       <label for="name">Hva heter du?</label>
       <input
@@ -77,7 +77,7 @@ export default {
         from: `${this.form.name} <${
           "mailgun@" + process.env.VUE_APP_MAILGUN_DOMAIN
         }>`,
-        to: ["matsi99@live.com"],
+        to: ["matsi99@live.com", "krister@skyfitness.no"],
         subject: "Ny forespørsel hos PT-Krister.no",
         text: `Du har mottatt en ny melding fra ${this.form.name}:\n\n${
           this.form.message

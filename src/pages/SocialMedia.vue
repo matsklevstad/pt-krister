@@ -7,7 +7,7 @@
       data-aos-delay="300"
     >
       <p>SOSIALE MEDIER</p>
-      <h1>🚀 Følg meg gjerne på Instagram</h1>
+      <h1>🚀 Følg meg på Instagram</h1>
     </div>
     <div
       class="insta-container"

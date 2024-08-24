@@ -12,21 +12,23 @@
           <h1>😁 Hei, jeg er Krister!</h1>
         </div>
         <p>
-          Mitt navn er Krister Sævik, og jeg er sertifisert personlig
-          trener/coach gjennom et årsstudium i PT og en bachelor i trening ved
-          Nord Universitet. Jeg jobber fulltid som online coach/PT og etter 8 år
-          i treningsbransjen har jeg hjulpet hundrevis av mennesker med å bli
-          sterk og veltrent fra svært ulike utgangspunkt.
+          Mitt navn er <strong>Krister Sævik</strong>, og jeg er sertifisert
+          personlig trener og coach med et årsstudium i personlig trening og en
+          bachelor i trening fra Nord Universitet. Jeg jobber fulltid som online
+          coach og PT, og med over <strong>8 års erfaring</strong> i
+          treningsbransjen har jeg hjulpet hundrevis av mennesker med å oppnå en
+          sterk og veltrent kropp, uavhengig av deres utgangspunkt. <br /><br />
+          Jeg hjelper deg med å <strong>bygge muskelmasse</strong>,
+          <strong>redusere fettprosenten</strong>, og
+          <strong>bli sterkere</strong>. Mange overvurderer hva som skal til for
+          å få en veltrent kropp, og ser det som noe uoppnåelig. Men sannheten
+          er at du ikke trenger å trene seks dager i uka eller følge en streng
+          kostholdsplan. Hvis du ønsker min hjelp til å bli sterk og veltrent en
+          gang for alle, ikke nøl med å ta kontakt for en uforpliktende prat.
           <br /><br />
-          Jeg hjelper deg å bygge muskelmasse, redusere fettprosent og bli
-          sterkere. Mange overvurderer hva som skal til, og ser en veltrent
-          kropp som noe uoppnåelig. Du trenger ikke å trene 6 dager i uka eller
-          følge en streng kostholdsplan. Hvis du ønsker min hjelp til å bli
-          sterk og veltrent en gang for alle, ikke nøl med å ta kontakt for en
-          uforpliktende prat.
-          <br /><br />
-          Kanskje er du bare en telefonsamtale unna og endre livet ditt. Du har
-          ingenting å tape, alt og vinne. Vi høres!
+          Kanskje er du bare en telefonsamtale unna å endre livet ditt.<strong>
+            Du har ingenting å tape, men alt å vinne. Vi høres!</strong
+          >
         </p>
       </div>
       <hr data-aos="fade-down" data-aos-duration="1000" data-aos-delay="300" />
