@@ -137,15 +137,15 @@ button {
   }
 
   .text {
-    font-size: 20px;
+    font-size: 15px;
     padding: 20px;
   }
   h1 {
-    font-size: 25px;
+    font-size: var(--header-h1-small-device);
   }
 
   button {
-    font-size: 20px;
+    font-size: 15px;
   }
 }
 </style>
