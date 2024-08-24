@@ -16,12 +16,13 @@
           <p>
             <i class="fa-solid fa-check"></i> Skreddersydd treningsprogram
             <br />
-            <i class="fa-solid fa-check"></i> Ukentlige
-            oppdateringer/justeringer<br />
-            <i class="fa-solid fa-check"></i> Ukentlig check ins <br />
-            <i class="fa-solid fa-check"></i> 24/7 chat med coach <br />
+            <i class="fa-solid fa-check"></i> Ukentlige oppdateringer og
+            justeringer<br />
+            <i class="fa-solid fa-check"></i> Ukentlig check-ins <br />
+            <i class="fa-solid fa-check"></i> 24/7 tilgang til chat med coach
+            <br />
             <i class="fa-solid fa-check"></i> Kostholdsveiledning <br />
-            <i class="fa-solid fa-check"></i> Teknikkanalyse (via video) <br />
+            <i class="fa-solid fa-check"></i> Teknikkanalyse via video <br />
           </p>
         </div>
         <div
@@ -74,8 +75,26 @@ h1 {
   padding: 30px;
   border-radius: 8px;
   background-color: var(--secondary-background-color);
-  box-shadow: rgba(226, 225, 225, 0.3) 0px 7px 20px 0px;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
   text-align: left;
+  position: relative;
+  z-index: 1;
+}
+
+.grid-item:nth-child(1) {
+  background-image: url("../assets/poly-grid-1.svg");
+  
+}
+
+.grid-item:nth-child(2) {
+  background-image: url("../assets/poly-grid-2.svg");
+}
+
+.grid-item p {
+  position: relative;
+  z-index: 2;
 }
 
 i {
