@@ -97,7 +97,7 @@ p {
     font-size: 20px;
   }
   p {
-    font-size: 10px;
+    font-size: 12px;
   }
   .text-container {
     padding-left: 5%;

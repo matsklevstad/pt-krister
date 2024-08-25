@@ -121,7 +121,7 @@ h1 {
   padding: 1rem;
   background-color: var(--secondary-background-color);
   cursor: pointer;
-  font-size: var(--header-p-large-device);
+  font-size: 20px;
   border-top-left-radius: 8px;
   border-top-right-radius: 8px;
 }
@@ -157,12 +157,11 @@ h1 {
     font-size: var(--header-h1-small-device);
   }
 
-  h3 {
-    font-size: 20px;
-  }
+
 
   .faq-question {
     padding: 10px;
+    font-size: 15px;
   }
 
   .faq-accordion-container {

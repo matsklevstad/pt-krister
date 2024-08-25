@@ -85,7 +85,6 @@ h1 {
 
 .grid-item:nth-child(1) {
   background-image: url("../assets/poly-grid-1.svg");
-  
 }
 
 .grid-item:nth-child(2) {
