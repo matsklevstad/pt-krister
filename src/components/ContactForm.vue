@@ -61,6 +61,8 @@
 import { reactive } from "vue";
 import FormData from "form-data";
 import Mailgun from "mailgun.js";
+import { openModal } from "jenesius-vue-modal";
+import FeedbackModal from "@/modals/FeedbackModal.vue";
 
 export default {
   name: "ContactForm",
@@ -121,7 +123,7 @@ export default {
           from: `${this.form.name} <${
             "mailgun@" + process.env.VUE_APP_MAILGUN_DOMAIN
           }>`,
-          to: ["matsi99@live.com"],
+          to: ["matsi99@live.com", "Krister@skyfitness.no"],
           subject: "Ny forespørsel hos PT-Krister.no",
           text: `Du har mottatt en ny melding fra ${this.form.name}:\n\n${
             this.form.message
@@ -133,17 +135,22 @@ export default {
         };
         mg.messages
           .create(process.env.VUE_APP_MAILGUN_DOMAIN, emailData)
-          .then((msg) => {
-            console.log(msg);
-            alert(
-              "Takk for din henvendelse! Jeg vil kontakte deg så snart som mulig."
-            );
+          .then(() => {
+            openModal(FeedbackModal, {
+              title: "Takk for meldingen!",
+              description: "Jeg vil ta kontakt i løpet av kort tid.",
+            });
+            this.form.name = "";
+            this.form.telephone = "";
+            this.form.email = "";
+            this.form.message = "";
           })
-          .catch((err) => {
-            console.log(err);
-            alert(
-              "Beklager, det oppstod en feil. Vennligst prøv igjen senere."
-            );
+          .catch(() => {
+            openModal(FeedbackModal, {
+              title: "Ops, noe gikk galt!",
+              description:
+                "Meldingen din ble ikke sendt. Vennligst prøv igjen senere, eller ta kontakt med meg på telefon eller e-post.",
+            });
           });
       }
     },
@@ -156,7 +163,6 @@ form {
   display: flex;
   flex-direction: column;
   gap: 10px;
-  box-shadow: rgba(255, 255, 255, 0.1) 0px 7px 29px 0px;
   border-radius: 8px;
   margin-top: 20px;
   padding: 20px;
@@ -164,6 +170,19 @@ form {
   background-color: var(--secondary-background-color);
   align-items: center;
   text-align: left;
+  animation: box-shadow-animation 5s infinite;
+}
+
+@keyframes box-shadow-animation {
+  0% {
+    box-shadow: rgba(255, 255, 255, 0.7) 0px 7px 29px 0px;
+  }
+  50% {
+    box-shadow: rgba(29, 37, 50, 0.7) 0px 7px 29px 0px;
+  }
+  100% {
+    box-shadow: rgba(255, 255, 255, 0.7) 0px 7px 29px 0px;
+  }
 }
 
 .form-group {
@@ -200,7 +219,7 @@ button {
   font-size: 20px;
 }
 
-span {
+.error {
   color: red;
   font-size: 15px;
 }

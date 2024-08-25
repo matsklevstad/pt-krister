@@ -26,6 +26,7 @@
         <ContactInformation />
       </section>
     </div>
+    <widget-container-modal />
   </div>
 </template>
 
@@ -41,6 +42,7 @@ import AOS from "aos";
 import "aos/dist/aos.css";
 import "./styles/globals.css";
 import FAQAccordion from "./pages/FAQAccordion.vue";
+import { container } from "jenesius-vue-modal";
 
 export default {
   name: "MainApp",
@@ -53,6 +55,7 @@ export default {
     FAQAccordion,
     SocialMedia,
     ContactInformation,
+    WidgetContainerModal: container,
   },
   methods: {
     scrollToSection({ sectionId, headerHeight }) {
@@ -79,6 +82,14 @@ html {
 body {
   height: 100%;
   margin: 0;
+}
+
+.modal-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--primary-background-color-opacity);
+  z-index: 1000;
 }
 
 #app {
