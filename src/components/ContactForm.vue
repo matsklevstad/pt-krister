@@ -20,7 +20,7 @@
           v-model="form.telephone"
           @input="validateTelephone"
           required
-          placeholder="950 00 000"
+          placeholder="90207050"
         />
         <span v-if="telephoneError" class="error">{{ telephoneError }}</span>
       </div>
