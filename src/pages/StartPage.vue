@@ -10,10 +10,10 @@
         Jeg tilbyr nettbasert coaching og personlige treningstimer for deg
         mellom 25 og 40 år som ønsker å bygge en sterk, sunn og veltrent kropp.
         Er du klar for å ta det neste steget? Fyll ut
-        <a href="#contact-form">kontaktskjemaet</a> nedenfor, så tar vi en
+        <a @click="scrollToSection('contact-form')">kontaktskjemaet</a> nedenfor, så tar vi en
         uforpliktende prat om hvordan jeg kan hjelpe deg å nå dine mål!
       </p>
-      <button @click="scrollToNextSection">JEG VIL VITE MER!</button>
+      <button @click="scrollToSection('about')">JEG VIL VITE MER!</button>
     </div>
     <div class="image-container">
       <img class="image" src="../assets/lifting-2.jpeg" alt="Krister" />
@@ -34,9 +34,9 @@ export default {
       document.querySelector(".sticky-header").clientHeight;
   },
   methods: {
-    scrollToNextSection() {
+    scrollToSection(sectionId) {
       this.$emit("scrollTo", {
-        sectionId: "about",
+        sectionId: sectionId,
         headerHeight: this.initialHeaderHeight,
       });
     },
@@ -61,6 +61,8 @@ h1 {
 
 a {
   color: var(--primary-color);
+  text-decoration: underline;
+  cursor: pointer;
 }
 
 .text {

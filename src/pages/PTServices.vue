@@ -41,6 +41,7 @@
             <br />
             <br />
             <br />
+            <br />
           </p>
         </div>
       </div>
@@ -77,7 +78,7 @@ h1 {
 .grid-item {
   padding: 30px;
   border-radius: 8px;
-  background-color: var(--secondary-background-color);
+  background-color: var(--secondary-background-color, 0.7);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -88,10 +89,12 @@ h1 {
 
 .grid-item:nth-child(1) {
   background-image: url("../assets/poly-grid-1.svg");
+  color: white;
 }
 
 .grid-item:nth-child(2) {
-  background-image: url("../assets/poly-grid-2.svg");
+  background-image: url("../assets/poly-grid-silver.svg");
+  color: var(--primary-background-color);
 }
 
 .grid-item p {
@@ -102,6 +105,11 @@ h1 {
 i {
   margin-top: 20px;
   margin-right: 5px;
+  background-color: white;
+  color: var(--primary-background-color);
+  border-radius: 50%;
+  padding: 5px;
+  border: 1px solid var(--primary-background-color);
 }
 
 p {
