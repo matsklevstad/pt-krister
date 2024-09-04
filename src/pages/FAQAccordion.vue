@@ -27,7 +27,7 @@
           @leave="leave"
         >
           <div v-show="activeIndex === index" class="faq-answer">
-            <p>{{ item.answer }}</p>
+            <p v-html="item.answer"></p>
           </div>
         </transition>
       </div>
@@ -50,7 +50,7 @@ export default {
         {
           question: "Hvordan booker jeg en PT-time?",
           answer:
-            "Du kan enkelt booke en time ved å kontakte meg direkte via e-post eller telefon. Jeg kan også nås ved å benytte kontaktskjemaet i bunn av nettsiden.",
+            "Du kan enkelt booke en time ved å kontakte meg direkte via e-post eller telefon. Jeg kan også nås ved å benytte <a href='#contact-form'>kontaktskjemaet</a>.",
         },
         {
           question: "Hva er prisen for en PT-time?",
@@ -156,8 +156,6 @@ h1 {
   h1 {
     font-size: var(--header-h1-small-device);
   }
-
-
 
   .faq-question {
     padding: 10px;

@@ -14,6 +14,7 @@
         >
           <h1>ONLINE COACHING</h1>
           <p>
+            <i class="fa-solid fa-check"></i> Tilgang til egen app <br />
             <i class="fa-solid fa-check"></i> Skreddersydd treningsprogram
             <br />
             <i class="fa-solid fa-check"></i> Ukentlige oppdateringer og
@@ -22,7 +23,6 @@
             <i class="fa-solid fa-check"></i> 24/7 tilgang til chat med coach
             <br />
             <i class="fa-solid fa-check"></i> Kostholdsveiledning <br />
-            <i class="fa-solid fa-check"></i> Teknikkanalyse via video <br />
           </p>
         </div>
         <div
@@ -38,6 +38,9 @@
             <i class="fa-solid fa-check"></i> Fysiske PT-timer <br />
             <i class="fa-solid fa-check"></i> Teknikkinstruksjon <br />
             <i class="fa-solid fa-check"></i> Tett oppfølging <br />
+            <br />
+            <br />
+            <br />
           </p>
         </div>
       </div>
