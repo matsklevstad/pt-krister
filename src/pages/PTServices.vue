@@ -93,7 +93,7 @@ h1 {
 }
 
 .grid-item:nth-child(2) {
-  background-image: url("../assets/poly-grid-silver.svg");
+  background-image: url("../assets/poly-grid-silver-2.svg");
   color: var(--primary-background-color);
 }
 
