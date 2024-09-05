@@ -1,24 +1,9 @@
 # pt-krister
-Visit the website:
-https://pt-krister.vercel.app/
+A website created for the personal trainer and online coach Krister Sævik. 
 
-## Project setup
-```
-npm install
-```
+Visit the website at
+[kristersaevik.no](https://kristersaevik.no/)
+or
+[saevikcoaching.no](https://saevikcoaching.no/)
 
-### Compiles and hot-reloads for development
-```
-npm run serve
-```
-
-### Compiles and minifies for production
-```
-npm run build
-```
-
-### Lints and fixes files
-```
-npm run lint
-```
 
