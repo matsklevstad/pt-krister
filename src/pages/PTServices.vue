@@ -13,16 +13,16 @@
           data-aos-delay="600"
         >
           <h1>ONLINE COACHING</h1>
-          <p>
-            <i class="fa-solid fa-check"></i> Tilgang til egen app <br />
-            <i class="fa-solid fa-check"></i> Skreddersydd treningsprogram
+          <p>Perfekt for deg som ønsker fleksibel oppfølging hvor som helst og når som helst.</p>
+            <p>
+            <i class="fa-solid fa-check"></i> <strong>Tilgang til egen app</strong> <br />
+            <i class="fa-solid fa-check"></i> <strong>Skreddersydd treningsprogram</strong>
             <br />
-            <i class="fa-solid fa-check"></i> Ukentlige oppdateringer og
-            justeringer<br />
-            <i class="fa-solid fa-check"></i> Ukentlig check-ins <br />
-            <i class="fa-solid fa-check"></i> 24/7 tilgang til chat med coach
+            <i class="fa-solid fa-check"></i> <strong>Ukentlige oppdateringer og justeringer</strong><br />
+            <i class="fa-solid fa-check"></i> <strong>Ukentlig check-ins</strong> <br />
+            <i class="fa-solid fa-check"></i> <strong>24/7 tilgang til chat med coach</strong>
             <br />
-            <i class="fa-solid fa-check"></i> Kostholdsveiledning <br />
+            <i class="fa-solid fa-check"></i> <strong>Kostholdsveiledning</strong> <br />
           </p>
         </div>
         <div
@@ -32,12 +32,14 @@
           data-aos-delay="800"
         >
           <h1>PERSONLIG TRENER</h1>
+          <p>Ideelt for deg som ønsker hands-on oppfølging og veiledning.</p>
+
           <p>
-            <i class="fa-solid fa-check"></i> Skreddersydd treningsprogram
+            <i class="fa-solid fa-check"></i> <strong>Skreddersydd treningsprogram</strong>
             <br />
-            <i class="fa-solid fa-check"></i> Fysiske PT-timer <br />
-            <i class="fa-solid fa-check"></i> Teknikkinstruksjon <br />
-            <i class="fa-solid fa-check"></i> Tett oppfølging <br />
+            <i class="fa-solid fa-check"></i> <strong>Fysiske PT-timer</strong> <br />
+            <i class="fa-solid fa-check"></i> <strong>Teknikkinstruksjon</strong> <br />
+            <i class="fa-solid fa-check"></i> <strong>Tett oppfølging</strong> <br />
             <br />
             <br />
             <br />

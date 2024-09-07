@@ -9,13 +9,13 @@
       :class="showMobileMenu ? 'open-menu' : 'closed-menu'"
     >
       <ul class="nav-items">
-        <li @click="navigateTo('about')"><span>😁</span> OM MEG</li>
-        <li @click="navigateTo('services')"><span>📦</span> TJENESTER</li>
-        <li @click="navigateTo('reviews')"><span>🏆</span> KUNDEANMELDELSER</li>
-        <li @click="navigateTo('faq')"><span>💬</span> SPØRSMÅL OG SVAR</li>
-        <li @click="navigateTo('social')"><span>🚀 </span>SOSIALE MEDIER</li>
+        <li @click="navigateTo('about')"><span>😁</span> Om meg</li>
+        <li @click="navigateTo('services')"><span>📦</span> Tjenester</li>
+        <li @click="navigateTo('reviews')"><span>🏆</span> Kundeanmeldelser</li>
+        <li @click="navigateTo('faq')"><span>💬</span> Spørsmål og svar</li>
+        <li @click="navigateTo('social')"><span>🚀 </span>Sosiale medier</li>
       </ul>
-      <button @click="navigateTo('contact-me')">KONTAKT MEG</button>
+      <button @click="navigateTo('contact-me')">Kontakt meg</button>
     </div>
   </div>
 </template>
@@ -88,7 +88,7 @@ export default {
 
 .nav-items {
   display: flex;
-  gap: 5px;
+  gap: 40px;
   font-size: 15px;
   list-style: none;
   flex-wrap: nowrap;
@@ -101,6 +101,9 @@ li {
 
 li:hover {
   text-decoration: underline;
+  font-style: bold;
+  transition: 0.3s ease;
+  transform: scale(1.2);
 }
 
 i {
@@ -108,7 +111,7 @@ i {
 }
 
 .logo {
-  cursor: pointer;
+  /*cursor: pointer;*/
   font-size: 25px;
 }
 

@@ -3,8 +3,7 @@
     <div class="overlay"></div>
     <div data-aos="fade-up" class="text">
       <h1 data-aos="fade-right" data-aos-delay="200">
-        Drømmer du om en sterkere og mer veltrent kropp? La oss nå målene dine
-        sammen!
+        🏋🏻‍♀️ Drømmer du om en sterkere og mer veltrent kropp?
       </h1>
       <p data-aos="fade-left" data-aos-delay="400">
         Jeg tilbyr nettbasert coaching og personlige treningstimer for deg
@@ -13,7 +12,7 @@
         <a @click="scrollToSection('contact-form')">kontaktskjemaet</a> nedenfor, så tar vi en
         uforpliktende prat om hvordan jeg kan hjelpe deg å nå dine mål!
       </p>
-      <button @click="scrollToSection('about')">JEG VIL VITE MER!</button>
+      <!-- <button @click="scrollToSection('about')">Jeg vil vite mer!</button> -->
     </div>
     <div class="image-container">
       <img class="image" src="../assets/lifting-2.jpeg" alt="Krister" />
@@ -143,7 +142,7 @@ button {
     padding: 20px;
   }
   h1 {
-    font-size: var(--header-h1-small-device);
+    font-size: 20px;
   }
 
   button {

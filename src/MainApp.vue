@@ -4,9 +4,9 @@
       <PageHeader @scrollTo="scrollToSection" />
     </div>
     <div class="full-page-container" @scrollTo="scrollToSection">
-      <section class="page-section" id="start">
+      <!-- <section class="page-section" id="start">
         <StartPage @scrollTo="scrollToSection" />
-      </section>
+      </section> -->
       <section class="page-section" id="about">
         <AboutMe />
       </section>
@@ -32,7 +32,7 @@
 
 <script>
 import PageHeader from "./components/PageHeader.vue";
-import StartPage from "./pages/StartPage.vue";
+//import StartPage from "./pages/StartPage.vue";
 import AboutMe from "./pages/AboutMe.vue";
 import CustomerReviews from "./pages/CustomerReviews.vue";
 import PTServices from "./pages/PTServices.vue";
@@ -48,7 +48,7 @@ export default {
   name: "MainApp",
   components: {
     PageHeader,
-    StartPage,
+    //StartPage,
     AboutMe,
     PTServices,
     CustomerReviews,
@@ -93,7 +93,7 @@ body {
 }
 
 #app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
+  font-family: "Libre Franklin", sans-serif;
   color: #fffdfd;
   background-color: var(--primary-background-color);
   display: flex;
@@ -102,7 +102,7 @@ body {
 }
 
 button {
-  font-family: Avenir, Helvetica Arial, sans-serif;
+  font-family: "Libre Franklin", sans-serif;
   background-color: var(--secondary-background-color);
   border: 1px solid rgb(255, 255, 255, 0.5);
   color: white;

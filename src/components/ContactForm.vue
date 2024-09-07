@@ -1,6 +1,6 @@
 <template>
   <form id="contact-form" @submit.prevent="sendEmail">
-    <h2>✉️ Send meg en uforpliktende forespørsel!</h2>
+    <h2>Send meg en uforpliktende forespørsel!</h2>
     <div class="form-group">
       <label for="name">Hva heter du?</label>
       <input

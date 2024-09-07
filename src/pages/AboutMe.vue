@@ -54,7 +54,8 @@ export default {
 .container {
   display: flex;
   width: 100%;
-  min-height: 90vh;
+  min-height: 70vh;
+  margin-top: 60px;
   flex-direction: column;
   padding-top: 40px;
   padding-left: 10%;
@@ -69,6 +70,7 @@ export default {
 .infobox {
   width: 50%;
   text-align: left;
+  line-height: 1.6;
 }
 
 .image-container {
@@ -118,7 +120,6 @@ p {
   .content {
     display: flex;
     flex-direction: column;
-
     justify-content: center;
   }
   .infobox {

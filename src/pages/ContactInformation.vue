@@ -2,7 +2,7 @@
   <div class="container">
     <img style="width: 100%" src="../assets/layered-wave.svg" />
     <div class="text-container" id="contact-me">
-      <h1>Kontaktinformasjon</h1>
+      <h1>✉️ Kontaktinformasjon</h1>
       <div class="links-container">
         <p>
           <i class="fa-solid fa-envelope"></i>
@@ -77,7 +77,7 @@ i {
 }
 
 h1 {
-  font-size: 60px;
+  font-size: var(--header-h1-large-device);
 }
 
 h2 {
@@ -91,7 +91,7 @@ p {
 
 @media (max-width: 768px) {
   h1 {
-    font-size: 30px;
+    font-size: var(--header-h1-small-device);
   }
   h2 {
     font-size: 20px;
