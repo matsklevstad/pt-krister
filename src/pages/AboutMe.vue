@@ -38,7 +38,7 @@
         data-aos-duration="700"
         data-aos-delay="300"
       >
-        <img src="../assets/krister-saevik.jpg" alt="Pull Down Image" />
+        <img src="../assets/krister-saevik.png" alt="Pull Down Image" />
       </div>
     </div>
   </div>
@@ -88,7 +88,7 @@ img {
 }
 
 .image-container:hover img {
-  transform: scale(1.05); /* Adjust the percentage as needed */
+  transform: scale(1.2); /* Adjust the percentage as needed */
 }
 
 hr {
@@ -132,9 +132,9 @@ p {
   }
 
   img {
-    width: 200px;
-    height: 200px;
-    border-radius: 50%;
+    width: 300px;
+    height: 300px;
+    
   }
 
   .image-container {
