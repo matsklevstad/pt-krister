@@ -88,7 +88,7 @@ img {
 }
 
 .image-container:hover img {
-  transform: scale(1.2); /* Adjust the percentage as needed */
+  transform: scale(1.05); /* Adjust the percentage as needed */
 }
 
 hr {
@@ -98,6 +98,32 @@ hr {
 
 h1 {
   font-size: var(--header-h1-large-device);
+}
+
+.header h1 {
+  white-space: nowrap;
+  overflow: hidden;
+  width: 0;
+  animation: typing 2s steps(40, end) forwards, blink-caret 0.75s step-end 2s;
+}
+
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+@keyframes blink-caret {
+  from,
+  to {
+    border-color: transparent;
+  }
+  50% {
+    border-color: black;
+  }
 }
 
 .header p {
@@ -134,7 +160,7 @@ p {
   img {
     width: 300px;
     height: 300px;
-    
+    border-radius: 50%;
   }
 
   .image-container {
