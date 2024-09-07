@@ -38,7 +38,7 @@
         data-aos-duration="700"
         data-aos-delay="300"
       >
-        <img src="../assets/krister-saevik.png" alt="Pull Down Image" />
+        <img src="../assets/krister-saevik-2.png" alt="Pull Down Image" />
       </div>
     </div>
   </div>
