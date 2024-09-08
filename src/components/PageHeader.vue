@@ -1,19 +1,68 @@
 <template>
   <div id="sticky-header" class="nav-menu" ref="navMenu">
     <div class="nav-buttons">
-      <p class="logo" @click="navigateTo('start')">COACH | PT KRISTER SÆVIK</p>
-      <i @click="showMenu" class="fa fa-bars"></i>
+      <p
+        class="logo"
+        @click="navigateTo('about')"
+        tabindex="0"
+        @keydown.enter="navigateTo('start')"
+        @keydown.space="navigateTo('start')"
+      >
+        COACH | PT KRISTER SÆVIK
+      </p>
+      <i
+        @click="showMenu"
+        class="fa fa-bars"
+        @keydown.enter="showMenu"
+        @keydown.space="showMenu"
+        tabindex="0"
+      ></i>
     </div>
     <div
       class="nav-content"
       :class="showMobileMenu ? 'open-menu' : 'closed-menu'"
     >
       <ul class="nav-items">
-        <li @click="navigateTo('about')"><span>😁</span> Om meg</li>
-        <li @click="navigateTo('services')"><span>📦</span> Tjenester</li>
-        <li @click="navigateTo('reviews')"><span>🏆</span> Kundeanmeldelser</li>
-        <li @click="navigateTo('faq')"><span>💬</span> Spørsmål og svar</li>
-        <li @click="navigateTo('social')"><span>🚀 </span>Sosiale medier</li>
+        <li
+          @click="navigateTo('about')"
+          tabindex="0"
+          @keydown.enter="navigateTo('about')"
+          @keydown.space="navigateTo('about')"
+        >
+          <span role="img" aria-label="Grinning face">😁</span> Om meg
+        </li>
+        <li
+          @click="navigateTo('services')"
+          tabindex="0"
+          @keydown.enter="navigateTo('services')"
+          @keydown.space="navigateTo('services')"
+        >
+          <span role="img" aria-label="Package">📦</span> Tjenester
+        </li>
+        <li
+          @click="navigateTo('reviews')"
+          tabindex="0"
+          @keydown.enter="navigateTo('reviews')"
+          @keydown.space="navigateTo('reviews')"
+        >
+          <span role="img" aria-label="Trophy">🏆</span> Kundeanmeldelser
+        </li>
+        <li
+          @click="navigateTo('faq')"
+          tabindex="0"
+          @keydown.enter="navigateTo('faq')"
+          @keydown.space="navigateTo('faq')"
+        >
+          <span role="img" aria-label="Speech bubble">💬</span> Spørsmål og svar
+        </li>
+        <li
+          @click="navigateTo('social')"
+          tabindex="0"
+          @keydown.enter="navigateTo('social')"
+          @keydown.space="navigateTo('social')"
+        >
+          <span role="img" aria-label="Rocket">🚀</span> Sosiale medier
+        </li>
       </ul>
       <button @click="navigateTo('contact-me')">Kontakt meg</button>
     </div>
@@ -104,6 +153,7 @@ li:hover {
   font-style: bold;
   transition: 0.3s ease;
   transform: scale(1.2);
+  color: gray;
 }
 
 i {
@@ -111,8 +161,10 @@ i {
 }
 
 .logo {
-  /*cursor: pointer;*/
   font-size: 25px;
+  cursor: pointer;
+  user-select: none;
+  font-weight: 100;
 }
 
 button {

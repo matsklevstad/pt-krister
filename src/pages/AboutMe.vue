@@ -69,8 +69,6 @@ export default {
 
 .infobox {
   width: 50%;
-  text-align: left;
-  line-height: 1.6;
 }
 
 .image-container {
@@ -158,8 +156,7 @@ p {
   }
 
   img {
-    width: 300px;
-    height: 300px;
+    width: 80%;
     border-radius: 50%;
   }
 

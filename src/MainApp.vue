@@ -99,7 +99,9 @@ body {
   display: flex;
   flex-direction: column;
   overflow: hidden; /* Prevent body from scrolling */
+  line-height: 1.6;
 }
+
 
 button {
   font-family: "Libre Franklin", sans-serif;

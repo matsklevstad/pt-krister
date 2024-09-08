@@ -52,7 +52,7 @@
       :style="{ opacity: isFormValid ? 1 : 0.5 }"
       type="submit"
     >
-      SEND MELDING
+      Send melding
     </button>
   </form>
 </template>
@@ -208,10 +208,13 @@ label {
 
 input,
 textarea {
+  font-family: "Libre Franklin", sans-serif;
+  background-color: var(--primary-background-color);
+  border: 1px solid rgb(255, 255, 255, 0.5);
+  color: white;
   padding: 10px;
   font-size: 20px;
   border-radius: 8px;
-  border: 1px solid #ccc;
 }
 
 button {
