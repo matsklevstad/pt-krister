@@ -19,19 +19,19 @@
           </p>
           <p>
             <i class="fa-solid fa-check"></i>
-            <strong>Tilgang til egen app</strong> <br />
+            Tilgang til egen app <br />
             <i class="fa-solid fa-check"></i>
-            <strong>Skreddersydd treningsprogram</strong>
+            Skreddersydd treningsprogram
             <br />
             <i class="fa-solid fa-check"></i>
-            <strong>Ukentlige oppdateringer og justeringer</strong><br />
+            Ukentlige oppdateringer og justeringer<br />
             <i class="fa-solid fa-check"></i>
-            <strong>Ukentlig check-ins</strong> <br />
+            Ukentlig check-ins <br />
             <i class="fa-solid fa-check"></i>
-            <strong>24/7 tilgang til chat med coach</strong>
+            24/7 tilgang til chat med coach
             <br />
             <i class="fa-solid fa-check"></i>
-            <strong>Kostholdsveiledning</strong> <br />
+            Kostholdsveiledning <br />
           </p>
         </div>
         <div
@@ -45,13 +45,13 @@
 
           <p>
             <i class="fa-solid fa-check"></i>
-            <strong>Skreddersydd treningsprogram</strong>
+            Skreddersydd treningsprogram
             <br />
-            <i class="fa-solid fa-check"></i> <strong>Fysiske PT-timer</strong>
+            <i class="fa-solid fa-check"></i> Fysiske PT-timer
             <br />
             <i class="fa-solid fa-check"></i>
-            <strong>Teknikkinstruksjon</strong> <br />
-            <i class="fa-solid fa-check"></i> <strong>Tett oppfølging</strong>
+            Teknikkinstruksjon <br />
+            <i class="fa-solid fa-check"></i> Tett oppfølging
             <br />
             <br />
             <br />
@@ -108,8 +108,8 @@ h1 {
 }
 
 .grid-item:nth-child(2) {
-  background-image: url("../assets/poly-grid-silver-2.svg");
-  color: var(--primary-background-color);
+  background-image: url("../assets/poly-grid-2.svg");
+  color: white;
 }
 
 .grid-item p {

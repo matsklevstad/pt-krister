@@ -125,6 +125,8 @@ export default {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  box-shadow: 0 4px 10px black; /* Nice shadow */
+
 }
 
 .nav-content {
@@ -202,7 +204,6 @@ span {
     display: auto;
     flex-direction: column;
     align-items: center;
-    box-shadow: 0 4px 10px var(--primary-background-color-opacity); /* Nice shadow */
   }
 
   .nav-content {
