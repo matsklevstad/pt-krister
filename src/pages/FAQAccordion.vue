@@ -1,6 +1,11 @@
 <template>
   <div class="container">
-    <div class="header" data-aos="fade-up" data-aos-delay="300">
+    <div
+      class="header"
+      data-aos="fade-up"
+      data-aos-delay="300"
+      data-aos-duration="1000"
+    >
       <p>SPØRSMÅL OG SVAR</p>
       <h1>💬 Ofte stilte spørsmål</h1>
     </div>
@@ -9,7 +14,7 @@
         v-for="(item, index) in questionList"
         :key="index"
         class="faq-item"
-        data-aos-duration="600"
+        data-aos-duration="1000"
         :data-aos-delay="600 + index * 50"
         data-aos="fade-up"
       >
@@ -87,7 +92,7 @@ export default {
 .container {
   display: flex;
   width: 100%;
-  min-height: 80vh;
+  min-height: 90vh;
   flex-direction: column;
   padding-left: 10%;
   padding-right: 20%;

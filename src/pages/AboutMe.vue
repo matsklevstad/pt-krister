@@ -3,8 +3,8 @@
     <div class="content">
       <div
         class="infobox"
-        data-aos="fade-up"
-        data-aos-duration="700"
+        data-aos="fade-down"
+        data-aos-duration="1000"
         data-aos-delay="300"
       >
         <div class="header">
@@ -31,11 +31,11 @@
           >
         </p>
       </div>
-      <hr data-aos="fade-down" data-aos-duration="1000" data-aos-delay="300" />
+      <hr data-aos="fade-in" data-aos-duration="1000" data-aos-delay="1000" />
       <div
         class="image-container"
-        data-aos="fade-up"
-        data-aos-duration="700"
+        data-aos="fade-down"
+        data-aos-duration="1000"
         data-aos-delay="300"
       >
         <img src="../assets/krister-saevik-2.png" alt="Pull Down Image" />
@@ -54,7 +54,7 @@ export default {
 .container {
   display: flex;
   width: 100%;
-  min-height: 70vh;
+  min-height: 100vh;
   margin-top: 60px;
   flex-direction: column;
   padding-top: 40px;

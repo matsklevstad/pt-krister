@@ -1,10 +1,20 @@
 <template>
   <div class="container">
-    <div class="header" data-aos="fade-up" data-aos-delay="300">
+    <div
+      class="header"
+      data-aos="fade-up"
+      data-aos-duration="1000"
+      data-aos-delay="300"
+    >
       <p>HVA SYNES ANDRE?</p>
       <h1>🏆 Kundeanmeldelser</h1>
     </div>
-    <div data-aos="fade-up" data-aos-delay="500" v-html="widgetHtml"></div>
+    <div
+      data-aos="fade-up"
+      data-aos-delay="500"
+      data-aos-duration="1000"
+      v-html="widgetHtml"
+    ></div>
   </div>
 </template>
 
@@ -38,7 +48,7 @@ export default {
 <style scoped>
 .container {
   width: 100%;
-  min-height: 80vh;
+  min-height: 90vh;
   flex-direction: column;
   display: flex;
   padding-left: 10%;

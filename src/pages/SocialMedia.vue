@@ -3,7 +3,7 @@
     <div
       class="header"
       data-aos="fade-up"
-      data-aos-duration="700"
+      data-aos-duration="1000"
       data-aos-delay="300"
     >
       <p>SOSIALE MEDIER</p>
@@ -12,7 +12,7 @@
     <div
       class="insta-container"
       data-aos="fade-up"
-      data-aos-duration="700"
+      data-aos-duration="1000"
       data-aos-delay="700"
     >
       <iframe
@@ -40,7 +40,7 @@ export default {
 <style scoped>
 .container {
   width: 100%;
-  min-height: 90vh;
+  min-height: 100vh;
   flex-direction: column;
   display: flex;
   overflow: hidden;

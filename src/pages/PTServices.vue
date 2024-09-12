@@ -1,6 +1,11 @@
 <template>
   <div class="container">
-    <div class="header" data-aos="fade-up" data-aos-delay="300">
+    <div
+      class="header"
+      data-aos="fade-up"
+      data-aos-delay="300"
+      data-aos-duration="1000"
+    >
       <p>HVA JEG TILBYR</p>
       <h1>📦 Tjenestene mine</h1>
     </div>
@@ -9,8 +14,8 @@
         <div
           class="grid-item"
           data-aos="flip-down"
-          data-aos-duration="600"
-          data-aos-delay="600"
+          data-aos-duration="1000"
+          data-aos-delay="1000"
         >
           <h1>ONLINE COACHING</h1>
           <p>
@@ -37,7 +42,7 @@
         <div
           class="grid-item"
           data-aos="flip-down"
-          data-aos-duration="600"
+          data-aos-duration="1000"
           data-aos-delay="800"
         >
           <h1>PERSONLIG TRENER</h1>
@@ -73,10 +78,11 @@ export default {
 <style scoped>
 .container {
   width: 100%;
-  min-height: 90vh;
+  min-height: 100vh;
   flex-direction: column;
   display: flex;
   padding-left: 10%;
+
   padding-right: 20%;
   overflow: hidden;
 }
