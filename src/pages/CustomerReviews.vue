@@ -70,30 +70,35 @@ p {
   opacity: 1 !important;
 }
 
-/* Scrollbar? 
+/* Scrollbar?
 :deep(.simply-carousel) {
   overflow-x: scroll !important;
   scrollbar-width: thin !important;
   scrollbar-color: grey white !important;
 }*/
 
-:deep(.simply-carousel)::-webkit-scrollbar {
-  width: 60px;
-  background-color: white;
-}
-
-:deep(.simply-carousel)::-webkit-scrollbar-thumb {
-  background-color: grey;
-}
-
-:deep(.style-module_headline__38-gz),
-:deep(.style-module_text__3LokZ) {
+::v-deep ._headline_slxya_80 {
   color: white !important;
 }
 
-:deep(#Layer_1 g path) {
+::v-deep ._text_slxya_99 {
+  font-size: 18px !important;
+  color: white !important;
+}
+
+::v-deep ._row_slxya_112 div p {
+  font-size: 25px !important;
+  color: white !important;
+}
+
+::v-deep .simply-carousel-container button {
+  font-size: 14px !important;
+}
+
+::v-deep #Layer_1 g path {
   fill: white !important;
 }
+
 /* -------- */
 
 @media (max-width: 768px) {
