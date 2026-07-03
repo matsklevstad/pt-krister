@@ -13,8 +13,12 @@
       data-aos="fade-up"
       data-aos-delay="500"
       data-aos-duration="1000"
-      v-html="widgetHtml"
-    ></div>
+    >
+      <div v-if="widgetHtml" v-html="widgetHtml"></div>
+      <div v-else class="widget-placeholder">
+        <p>⚙️ Kundeanmeldelser vises her i produksjon.<br /><small>Sett <code>VUE_APP_REVIEW_ID</code> i <code>.env.local</code> for å aktivere widgeten.</small></p>
+      </div>
+    </div>
   </div>
 </template>
 
@@ -31,9 +35,10 @@ export default {
   },
   methods: {
     loadWidget() {
-      // Define your widget configuration or URL
+      const reviewId = process.env.VUE_APP_REVIEW_ID;
+      if (!reviewId) return; // placeholder shown in template instead
 
-      this.widgetHtml = `<div data-widget-textcarousel="${process.env.VUE_APP_REVIEW_ID}"></div>`;
+      this.widgetHtml = `<div data-widget-textcarousel="${reviewId}"></div>`;
 
       // Optionally, add any additional initialization or script execution
       const script = document.createElement("script");
@@ -48,12 +53,14 @@ export default {
 <style scoped>
 .container {
   width: 100%;
+  max-width: var(--content-max-width);
   min-height: 90vh;
   flex-direction: column;
   display: flex;
-  padding-left: 10%;
-  padding-right: 20%;
+  padding-left: var(--section-pad-x);
+  padding-right: var(--section-pad-x);
   overflow: hidden;
+  box-sizing: border-box;
 }
 
 h1 {
@@ -101,12 +108,32 @@ p {
 
 /* -------- */
 
+.widget-placeholder {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 200px;
+  border: 2px dashed rgba(255, 255, 255, 0.25);
+  border-radius: 8px;
+  text-align: center;
+  color: rgba(255, 255, 255, 0.5);
+  padding: 40px 20px;
+}
+
+.widget-placeholder code {
+  background: rgba(255, 255, 255, 0.1);
+  padding: 2px 6px;
+  border-radius: 4px;
+  font-size: 0.9em;
+}
+
 @media (max-width: 768px) {
   .container {
-    padding: 0px;
-    padding-top: 5%;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 20px;
     min-height: 70vh;
-    padding-bottom: 10%;
+    padding-bottom: 40px;
   }
 
   .header {

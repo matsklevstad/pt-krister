@@ -6,9 +6,12 @@
     --secondary-background-color-hover: rgb(15, 19, 26);
     --secondary-background-color-active: rgb(78, 78, 78);
 
-    --header-h1-large-device: 35px;
-    --header-h1-small-device: 30px;
+    --header-h1-large-device: clamp(24px, 2.4vw, 38px);
+    --header-h1-small-device: clamp(20px, 5.5vw, 28px);
 
-    --header-p-large-device: 20px;
-    --header-p-small-device: 15px;
+    --header-p-large-device: clamp(15px, 1.4vw, 22px);
+    --header-p-small-device: clamp(13px, 3.8vw, 17px);
+
+    --section-pad-x: clamp(20px, 7vw, 100px);
+    --content-max-width: 1400px;
 }

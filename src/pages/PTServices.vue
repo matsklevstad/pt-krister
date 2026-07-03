@@ -78,13 +78,14 @@ export default {
 <style scoped>
 .container {
   width: 100%;
+  max-width: var(--content-max-width);
   min-height: 100vh;
   flex-direction: column;
   display: flex;
-  padding-left: 10%;
-
-  padding-right: 20%;
+  padding-left: var(--section-pad-x);
+  padding-right: var(--section-pad-x);
   overflow: hidden;
+  box-sizing: border-box;
 }
 
 h1 {
@@ -137,12 +138,25 @@ p {
   font-size: var(--header-p-large-device);
 }
 
+@media (min-width: 769px) and (max-width: 1023px) {
+  .grid {
+    gap: 30px;
+  }
+  .grid-item h1 {
+    font-size: 20px;
+  }
+  p {
+    font-size: var(--header-p-small-device);
+  }
+}
+
 @media (max-width: 768px) {
   .container {
-    padding: 0px;
-    padding-top: 5%;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 20px;
     min-height: 80vh;
-    padding-bottom: 10%;
+    padding-bottom: 40px;
   }
 
   .header {

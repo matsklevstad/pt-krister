@@ -108,8 +108,8 @@ button {
   background-color: var(--secondary-background-color);
   border: 1px solid rgb(255, 255, 255, 0.5);
   color: white;
-  padding: 15px 32px;
-  font-size: 24px;
+  padding: clamp(10px, 1.2vw, 15px) clamp(18px, 2.5vw, 32px);
+  font-size: clamp(15px, 1.5vw, 22px);
   border-radius: 24px;
   cursor: pointer;
 }
