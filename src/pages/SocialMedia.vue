@@ -40,12 +40,14 @@ export default {
 <style scoped>
 .container {
   width: 100%;
+  max-width: var(--content-max-width);
   min-height: 100vh;
   flex-direction: column;
   display: flex;
   overflow: hidden;
-  padding-left: 10%;
-  padding-right: 20%;
+  padding-left: var(--section-pad-x);
+  padding-right: var(--section-pad-x);
+  box-sizing: border-box;
 }
 
 h1 {
@@ -67,11 +69,17 @@ iframe {
   border-radius: 8px;
 }
 
+@media (min-width: 769px) and (max-width: 1023px) {
+  iframe {
+    height: 750px;
+  }
+}
+
 @media (max-width: 768px) {
   .container {
-    padding-left: 5%;
-    padding-right: 5%;
-    padding-top: 5%;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 20px;
     min-height: 70vh;
   }
 

@@ -202,7 +202,7 @@ form {
 
 label {
   color: white;
-  font-size: 20px;
+  font-size: clamp(14px, 1.5vw, 20px);
   margin-top: 15px;
 }
 
@@ -213,13 +213,13 @@ textarea {
   border: 1px solid rgb(255, 255, 255, 0.5);
   color: white;
   padding: 10px;
-  font-size: 20px;
+  font-size: clamp(14px, 1.5vw, 20px);
   border-radius: 8px;
 }
 
 button {
   margin-top: 10px;
-  font-size: 20px;
+  font-size: clamp(14px, 1.5vw, 20px);
 }
 
 .error {

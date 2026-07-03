@@ -54,12 +54,14 @@ export default {
 .container {
   display: flex;
   width: 100%;
+  max-width: var(--content-max-width);
   min-height: 100vh;
   margin-top: 60px;
   flex-direction: column;
   padding-top: 40px;
-  padding-left: 10%;
-  padding-right: 20%;
+  padding-left: var(--section-pad-x);
+  padding-right: var(--section-pad-x);
+  box-sizing: border-box;
 }
 .content {
   display: flex;
@@ -133,13 +135,24 @@ p {
   font-size: 20px;
 }
 
+@media (min-width: 769px) and (max-width: 1023px) {
+  .infobox {
+    width: 55%;
+  }
+  .image-container {
+    width: 40%;
+  }
+}
+
 @media (max-width: 768px) {
   .container {
-    padding: 0;
-    padding-top: 5%;
-    padding-bottom: 10%;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 20px;
+    padding-bottom: 40px;
     overflow: hidden;
     min-height: 70vh;
+    margin-top: 60px;
   }
   .content {
     display: flex;
@@ -147,9 +160,12 @@ p {
     justify-content: center;
   }
   .infobox {
-    padding-left: 5%;
-    padding-right: 5%;
-    width: 90%;
+    width: 100%;
+  }
+  .header h1 {
+    white-space: normal;
+    width: 100%;
+    animation: none;
   }
   hr {
     visibility: hidden;
@@ -161,7 +177,7 @@ p {
   }
 
   .image-container {
-    width: 100vw;
+    width: 100%;
     height: 100%;
     align-items: start;
     display: flex;

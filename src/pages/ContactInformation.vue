@@ -56,14 +56,17 @@ export default {
     rgb(21, 27, 41) 0%,
     var(--primary-background-color) 100%
   );
-  padding-left: 10%;
+  padding-left: var(--section-pad-x);
+  padding-right: var(--section-pad-x);
   margin-bottom: 200px;
-  padding-right: 20%;
+  box-sizing: border-box;
 }
 
 .links-container {
   display: flex;
   flex-direction: row;
+  flex-wrap: wrap;
+  gap: 20px;
   justify-content: space-between;
   color: white;
 }
@@ -100,9 +103,13 @@ p {
     font-size: 12px;
   }
   .text-container {
-    padding-left: 5%;
-    padding-right: 5%;
+    padding-left: 20px;
+    padding-right: 20px;
     margin-bottom: 75px;
+  }
+  .links-container {
+    flex-direction: column;
+    gap: 4px;
   }
 }
 </style>

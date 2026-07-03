@@ -163,7 +163,7 @@ i {
 }
 
 .logo {
-  font-size: 25px;
+  font-size: clamp(14px, 2vw, 25px);
   cursor: pointer;
   user-select: none;
   font-weight: 100;
